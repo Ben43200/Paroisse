@@ -7,57 +7,14 @@ const fetchAsync = async() =>{
    let response = await fetch('/citations.json');
    // only proceed once promise is resolved
    let data = await response.json();
-   // only proceed once second promise is resolved
-   console.log(data)
-   // let citations = JSON.stringify(data);
-   
-   console.log(data)
-   console.log(data[0]);
+   //implémentation et calcul aléatoire de la citation au chargement de la page
 var randomNum = Math.floor(Math.random() * data.length);
     document.getElementById("quote").innerHTML = data[randomNum];
    // console.log("random",randomNum, "citations", data[randomNum]);
    return data[randomNum];
 }
 
-fetchAsync();
 
-
-
-
-// document.getElementById("quote").innerHTML = citations[randomNum];
-// fetchAsync().then(randomQuote => () {
-//    // var randomNum = Math.floor(Math.random() * citations.length);
-//    // document.getElementById("quote").innerHTML = citations[randomNum];
-//    console.log("test")
-// }
- // trigger async function
- // log response or catch error of fetch promise
-//  var citations = fetchAsync()
-//  citations.then(data => {
-// console.log(JSON.stringify(data));
-//  }
-
-
-
-//  console.log(citations);
-
-// const getIP = async () => {
-//    let ;
-//    await fetch('/citations.json')
-//    .then(result => result.json())
-//    .then(data => {
-//        ip = data.ip;
-//        console.log('test',ip);
-//    });
-//    console.log('test2',ip);
-// };
-
-// getIP();
-
-// function randomQuote(){
-//    console.log("test")
-// }
-// randomQuote();
 
 
 
