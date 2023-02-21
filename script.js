@@ -7,7 +7,7 @@ const fetchAsync = async() =>{
    let response = await fetch('/citations.json');
    // only proceed once promise is resolved
    let data = await response.json();
-   //implémentation et calcul aléatoire de la citation au chargement de la page
+   // calcul aléatoire et implémentation de la citation au chargement de la page
 var randomNum = Math.floor(Math.random() * data.length);
     document.getElementById("quote").innerHTML = data[randomNum];
    // console.log("random",randomNum, "citations", data[randomNum]);
