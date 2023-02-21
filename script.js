@@ -15,8 +15,8 @@ const fetchAsync = async() =>{
    console.log(data[0]);
 var randomNum = Math.floor(Math.random() * data.length);
     document.getElementById("quote").innerHTML = data[randomNum];
-   console.log("random",randomNum, "citations", data[randomNum]);
-   // return randomNum
+   // console.log("random",randomNum, "citations", data[randomNum]);
+   return data[randomNum];
 }
 
 fetchAsync();
