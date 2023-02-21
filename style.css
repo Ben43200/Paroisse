@@ -1,3 +1,47 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+#root{
+    display: grid;
+    grid-template-areas: ". header ."
+        /* ". heading ." */
+        ". main ."
+        "footer footer footer";
+		grid-template-columns: auto 1240px auto;
+}
+
+#root > header{
+    grid-area: header ;
+}
+#root > main{
+    grid-area: main ;
+}
+
+#root > footer{
+    grid-area: footer;
+}
+
+/* @media screen AND (min-width: 1240px) {
+    #root {
+        grid-template-columns: auto 1240px auto;
+    }
+    
+} */
+
+
+
+
+
+
 .container_accueil 
 {
   display: grid;
@@ -394,6 +438,7 @@ header
 	border: 0.1vw #D50551 solid;
 	border-radius: 0.3vw;
 	box-shadow: 0.3vw 0.3vw 0.3vw #9EA9D4;
+	grid-area: header;
 }
 html
 {
