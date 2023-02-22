@@ -13,6 +13,7 @@ body {
     ". footer .";
   grid-template-columns: auto 1240px auto;
   font-family: Arial, Verdana, sans-serif;
+  row-gap: 20px;
 }
 
 header {
@@ -28,6 +29,7 @@ header {
   border-color: rgb(213, 5, 81);
   border-image: initial;
   border-radius: 0.3vw;
+  padding: 10px;
 }
 .emplacement_logo {
   grid-area: logo;
@@ -117,4 +119,93 @@ footer {
 
 img {
   object-fit: cover;
+}
+
+// .slider /*carrousel accueil*/ {
+//   font-size: 0;
+//   /*width: 799px;*/
+//   overflow: hidden;
+//   border: 0.1vw #d50551 solid;
+//   border-radius: 0.3vw;
+//   box-shadow: 0.3vw 0.3vw 0.3vw #9ea9d4;
+// }
+
+// @keyframes AutoSlide {
+//   0%,
+//   15%,
+//   100% {
+//     left: 0px; /*1ère image*/
+//   }
+//   35%,
+//   50% {
+//     left: -150px; /*2ème image*/
+//   }
+//   70%,
+//   85% {
+//     left: -300px; /*3ème image*/
+//   }
+// }
+
+// .slides {
+//   position: relative;
+//   width: 150px;
+//   height: 150px;
+//   margin: 20px auto;
+//   overflow: hidden;
+// }
+// .slides li {
+//   display: inline;
+// }
+
+// .slider {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 450px;
+//   margin: 0;
+//   padding: 0;
+
+//   /*CSS3 keyframes animation*/
+//   animation-name: AutoSlide;
+//   animation-duration: 10s;
+//   animation-iteration-count: infinite;
+//   animation-timing-function: ease-in-out;
+// }
+
+.left-column {
+  grid-template-areas: "content";
+  overflow: hidden;
+  border: 2px solid red;
+  display: grid;
+}
+
+.slider {
+  animation: slide 13.5s ease infinite 0s;
+  // width: 50%;
+  display: flex;
+
+  grid-area: content;
+}
+@keyframes slide {
+  0%,
+  11.76%,
+  100% {
+    transform: translate(0, 0);
+  }
+  20.59%,
+  32.35% {
+    transform: translate(-20%, 0);
+  }
+  41.18%,
+  52.94% {
+    transform: translate(-40%, 0);
+  }
+  61.76%,
+  73.53% {
+    transform: translate(-60%, 0);
+  }
+  82.35%,
+  94.12% {
+    transform: translate(-80%, 0);
+  }
 }
