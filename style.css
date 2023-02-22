@@ -143,6 +143,8 @@ footer {
   color: #fff;
   background-color: #e26a8d;
   /* couleur lie de vin */
+  border-color: #9ea9d4 #c90052 #c90052 #9ea9d4;
+  border: 0.1vw #fae800 solid;
   text-decoration: none;
   padding: 3px 10px;
   text-align: center;
@@ -161,6 +163,7 @@ footer {
 }
 
 .menu ul a:hover {
-  background-color: #ac9933;
+  background-color: #5aabdf;
+  border-color: #9ea9d4 #c90052 #c90052 #9ea9d4;
 }
 /*# sourceMappingURL=style.css.map */
