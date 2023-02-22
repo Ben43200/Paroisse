@@ -21,6 +21,12 @@ header {
     "logo citation adresse"
     "nav nav nav";
   grid-template-columns: auto;
+  box-shadow: rgb(158, 169, 212) 0.3vw 0.3vw 0.3vw;
+  border-width: 0.1vw;
+  border-style: solid;
+  border-color: rgb(213, 5, 81);
+  border-image: initial;
+  border-radius: 0.3vw;
 }
 .emplacement_logo {
   grid-area: logo;
@@ -28,8 +34,9 @@ header {
 .adresse {
   grid-area: adresse;
   object-fit: cover;
-  align-items: center;
+
   display: flex;
+  justify-content: flex-end;
 }
 
 nav {
@@ -47,6 +54,7 @@ footer {
 //Mise en forme du menu
 .menu {
   display: flex;
+  justify-content: center;
 }
 
 .menu ul {
@@ -86,4 +94,15 @@ footer {
 .menu ul a:hover {
   background-color: #5aabdf;
   border-color: #9ea9d4 #c90052 #c90052 #9ea9d4;
+}
+
+.container_accueil {
+  display: grid;
+  // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+img {
+  object-fit: cover;
 }

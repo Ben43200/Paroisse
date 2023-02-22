@@ -72,6 +72,14 @@ header {
       grid-template-areas: "logo citation adresse" "nav nav nav";
   -ms-grid-columns: auto;
       grid-template-columns: auto;
+  -webkit-box-shadow: #9ea9d4 0.3vw 0.3vw 0.3vw;
+          box-shadow: #9ea9d4 0.3vw 0.3vw 0.3vw;
+  border-width: 0.1vw;
+  border-style: solid;
+  border-color: #d50551;
+  -o-border-image: initial;
+     border-image: initial;
+  border-radius: 0.3vw;
 }
 
 .emplacement_logo {
@@ -86,12 +94,12 @@ header {
   grid-area: adresse;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 nav {
@@ -117,6 +125,9 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .menu ul {
@@ -162,5 +173,18 @@ footer {
 .menu ul a:hover {
   background-color: #5aabdf;
   border-color: #9ea9d4 #c90052 #c90052 #9ea9d4;
+}
+
+.container_accueil {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=style.css.map */
