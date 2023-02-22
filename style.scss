@@ -115,6 +115,9 @@ footer {
   // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+  grid-template-areas:
+    "left right"
+    ". right";
 }
 
 img {
@@ -125,6 +128,11 @@ img {
   grid-template-areas: "content";
   overflow: hidden;
   display: grid;
+  grid-area: left;
+}
+
+.right-column {
+  grid-area: right;
 }
 
 .left-column,
