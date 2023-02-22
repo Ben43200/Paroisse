@@ -21,105 +21,17 @@ header {
     "logo citation adresse"
     "nav nav nav";
 }
+.emplacement_logo {
+  grid-area: logo;
+}
+.adresse {
+  grid-area: adresse;
+  object-fit: cover;
+}
 
 nav {
-  background-color: black;
   grid-area: nav;
-  display: flex;
-
-  // .menu{
-  //     // display: flex;
-  //     color: red;
-  //     background-color: aqua;
-  //     display: flex;
-
-  //             // box-sizing: content-box;
-  //             // width: 100%;
-  //             // background-color: #E26A8D; /* couleur lie de vin */
-  //             // color: black;
-  //             // font-weight: bold;
-  //             // text-decoration: none;
-  //             // text-align: center;
-  //             // padding: 0 auto;
-  //             // border: 0.1vw #FAE800 solid;
-  //             // font-size: 14px;
-  //             // border-color: #9EA9D4 #C90052 #C90052 #9EA9D4;
-  //             // display: flex;
-  //             // width: 100px;
-  //             // height: 35px;
-  //             a {
-  //                 display: block;
-  //                 width: 100px;
-  //                 height: 35px;
-  //                 line-height: 35px;
-  //                 color: #fff;
-  //                 background-color: #317f92;
-  //                 text-decoration: none;
-  //                 padding: 3px 10px;
-  //                 text-align: center;
-  //               }
-
-  //          }
-  //         &:hover a  {
-  //             display: block;
-  //             // position: absolute;
-  //             // top: 41px;
-  //             // left: 0px;
-  //             z-index: 100;
-  //         }
-  //     }
-  .menu {
-    background-color: #80bdcc;
-    display: flex;
-    .ul .li a {
-      box-sizing: content-box;
-      width: 100%;
-      background-color: #e26a8d;
-      color: black;
-      font-weight: bold;
-      text-decoration: none;
-      text-align: center;
-      padding: 0 auto;
-      border: 0.1vw #fae800 solid;
-      font-size: 14px;
-      border-color: #9ea9d4 #c90052 #c90052 #9ea9d4;
-    }
-  }
 }
-//     .ul {
-//       display: none;
-//       list-style-type: none;
-//       margin: 0px;
-//       padding: 0px;
-//       .a {
-//         display: block;
-//         width: 100px;
-//         height: 35px;
-//         line-height: 35px;
-//         color: #fff;
-//         background-color: #317f92;
-//         text-decoration: none;
-//         padding: 3px 10px;
-//         text-align: center;
-
-//         .li {
-//           position: relative;
-//         }
-//         &:hover ul {
-//           display: block;
-//           position: absolute;
-//           top: 41px;
-//           left: 0px;
-//           z-index: 100;
-
-//           .li a:hover {
-//             background-color: #ac9933;
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
 
 main {
   grid-area: main;
@@ -129,47 +41,11 @@ footer {
   grid-area: footer;
 }
 
-// .menu {
-//   background-color: #80bdcc;
-//   display: flex;
-// }
-// .liste {
-//   display: none;
-// }
-// .dropdownmenu,
-// .dropdownmenu ul {
-//   list-style-type: none;
-//   margin: 0px;
-//   padding: 0px;
-// }
-// .dropdownmenu a {
-//   display: block;
-//   width: 100px;
-//   height: 35px;
-//   line-height: 35px;
-//   color: #fff;
-//   background-color: #317f92;
-//   text-decoration: none;
-//   padding: 3px 10px;
-//   text-align: center;
-// }
-// .dropdownmenu li {
-//   position: relative;
-// }
-// .dropdownmenu li:hover ul {
-//   display: block;
-//   position: absolute;
-//   top: 41px;
-//   left: 0px;
-//   z-index: 100;
-// }
-// .dropdownmenu ul a:hover {
-//   background-color: #ac9933;
-// }
+//Mise en forme du menu
 .menu {
-  background-color: #80bdcc;
   display: flex;
 }
+
 .menu ul {
   display: none;
 }
@@ -180,7 +56,7 @@ footer {
   padding: 0px;
 }
 .menu a {
-  display: block;
+  display: flex;
   width: 100px;
   height: 35px;
   line-height: 35px;
