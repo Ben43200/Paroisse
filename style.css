@@ -70,6 +70,8 @@ header {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "logo citation adresse" "nav nav nav";
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
 }
 
 .emplacement_logo {
@@ -84,6 +86,12 @@ header {
   grid-area: adresse;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 nav {

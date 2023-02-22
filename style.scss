@@ -20,6 +20,7 @@ header {
   grid-template-areas:
     "logo citation adresse"
     "nav nav nav";
+  grid-template-columns: auto;
 }
 .emplacement_logo {
   grid-area: logo;
@@ -27,6 +28,8 @@ header {
 .adresse {
   grid-area: adresse;
   object-fit: cover;
+  align-items: center;
+  display: flex;
 }
 
 nav {
