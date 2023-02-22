@@ -80,6 +80,10 @@ footer {
   text-decoration: none;
   padding: 3px 10px;
   text-align: center;
+
+  &:hover {
+    background-color: #5aabdf;
+  }
 }
 .menu li {
   position: relative;
@@ -91,7 +95,7 @@ footer {
   left: 0px;
   z-index: 100;
 }
-.menu ul a:hover {
+.menu ul li a:hover {
   background-color: #5aabdf;
   border-color: #9ea9d4 #c90052 #c90052 #9ea9d4;
 }

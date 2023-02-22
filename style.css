@@ -158,6 +158,10 @@ footer {
   text-align: center;
 }
 
+.menu a:hover {
+  background-color: #5aabdf;
+}
+
 .menu li {
   position: relative;
 }
@@ -170,7 +174,7 @@ footer {
   z-index: 100;
 }
 
-.menu ul a:hover {
+.menu ul li a:hover {
   background-color: #5aabdf;
   border-color: #9ea9d4 #c90052 #c90052 #9ea9d4;
 }
