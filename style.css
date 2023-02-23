@@ -158,7 +158,6 @@ label,
   }
   nav .menu {
     flex-direction: column;
-    background: #48435c;
     height: 220px;
     display: none;
   }
@@ -176,14 +175,6 @@ label,
   }
   #toggle:checked + .menu {
     display: flex;
-  }
-}
-@media screen and (max-width: 780px) {
-  body {
-    background-color: #848; /*Violet*/
-  }
-  .conteneur-flex {
-    flex-flow: column wrap;
   }
 }
 main {
