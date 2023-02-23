@@ -49,6 +49,62 @@ header {
 nav {
   grid-area: nav;
 }
+label,
+#toggle {
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  nav {
+    height: 60px;
+  }
+
+  nav .menu {
+    // display: none;
+    flex-direction: column;
+    background: #48435c;
+    height: 220px;
+    display: none;
+  }
+
+  nav .menu a {
+    width: 50%;
+  }
+
+  label {
+    width: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    // position: absolute;
+    font-size: 40px;
+    color: black;
+    cursor: pointer;
+  }
+
+  #toggle:checked + .menu {
+    display: flex;
+  }
+}
+@media screen and (max-width: 780px) {
+  body {
+    background-color: #848; /*Violet*/
+  }
+  .conteneur-flex {
+    flex-flow: column wrap;
+  }
+  main .container_accueil {
+    display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+    grid-template-areas:
+      "left"
+      "right";
+  }
+}
 
 main {
   grid-area: main;
