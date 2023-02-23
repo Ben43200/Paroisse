@@ -94,16 +94,15 @@ label,
   .conteneur-flex {
     flex-flow: column wrap;
   }
-  main .container_accueil {
-    display: grid;
-    // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-template-columns: 1fr;
+  // main .container_accueil {
+  //   // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  //   grid-template-columns: 1fr;
 
-    gap: 20px;
-    grid-template-areas:
-      "left"
-      "right";
-  }
+  //   gap: 20px;
+  //   grid-template-areas:
+  //     "left"
+  //     "right";
+  // }
 }
 
 main {
@@ -166,14 +165,24 @@ footer {
   border-color: #9ea9d4 #c90052 #c90052 #9ea9d4;
 }
 
-.container_accueil {
-  display: grid;
-  // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  grid-template-areas:
-    "left right"
-    ". right";
+main .container_accueil {
+  @include for-size(desktop-up) {
+    display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    grid-template-areas:
+      "left right"
+      ". right";
+  }
+  @include for-size(phone-only) {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+    grid-template-areas:
+      "left"
+      "right";
+  }
 }
 
 img {

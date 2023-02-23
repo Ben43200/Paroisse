@@ -2,14 +2,64 @@
   /* remember to define focus styles! */
   /* tables still need 'cellspacing="0"' in the markup */
 }
-* html, * body, * div, * span, * applet, * object, * iframe,
-* h1, * h2, * h3, * h4, * h5, * h6, * p, * blockquote, * pre,
-* a, * abbr, * acronym, * address, * big, * cite, * code,
-* del, * dfn, * em, * font, * img, * ins, * kbd, * q, * s, * samp,
-* small, * strike, * strong, * sub, * sup, * tt, * var,
-* dl, * dt, * dd, * ol, * ul, * li,
-* fieldset, * form, * label, * legend,
-* table, * caption, * tbody, * tfoot, * thead, * tr, * th, * td {
+* html,
+* body,
+* div,
+* span,
+* applet,
+* object,
+* iframe,
+* h1,
+* h2,
+* h3,
+* h4,
+* h5,
+* h6,
+* p,
+* blockquote,
+* pre,
+* a,
+* abbr,
+* acronym,
+* address,
+* big,
+* cite,
+* code,
+* del,
+* dfn,
+* em,
+* font,
+* img,
+* ins,
+* kbd,
+* q,
+* s,
+* samp,
+* small,
+* strike,
+* strong,
+* sub,
+* sup,
+* tt,
+* var,
+* dl,
+* dt,
+* dd,
+* ol,
+* ul,
+* li,
+* fieldset,
+* form,
+* label,
+* legend,
+* table,
+* caption,
+* tbody,
+* tfoot,
+* thead,
+* tr,
+* th,
+* td {
   margin: 0;
   padding: 0;
   border: 0;
@@ -28,22 +78,28 @@
   color: black;
   background: white;
 }
-* ol, * ul {
+* ol,
+* ul {
   list-style: none;
 }
 * table {
   border-collapse: separate;
   border-spacing: 0;
 }
-* caption, * th, * td {
+* caption,
+* th,
+* td {
   text-align: left;
   font-weight: normal;
 }
-* blockquote:before, * blockquote:after,
-* q:before, * q:after {
+* blockquote:before,
+* blockquote:after,
+* q:before,
+* q:after {
   content: "";
 }
-* blockquote, * q {
+* blockquote,
+* q {
   quotes: "" "";
 }
 
@@ -129,12 +185,6 @@ label,
   .conteneur-flex {
     flex-flow: column wrap;
   }
-  main .container_accueil {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    grid-template-areas: "left" "right";
-  }
 }
 main {
   grid-area: main;
@@ -196,11 +246,20 @@ footer {
   border-color: #9ea9d4 #c90052 #c90052 #9ea9d4;
 }
 
-.container_accueil {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  grid-template-areas: "left right" ". right";
+@media screen and (min-width: 1200px) {
+  main .container_accueil {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    grid-template-areas: "left right" ". right";
+  }
+}
+@media screen and (max-width: 599px) {
+  main .container_accueil {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    grid-template-areas: "left" "right";
+  }
 }
 
 img {
