@@ -203,12 +203,15 @@ img {
 }
 
 .slider {
-  animation: slide 13.5s ease infinite 0s;
+  // animation: slide 13.5s ease infinite 0s;
+  animation: 13.5s slide infinite;
+  animation-direction: alternate;
 
   display: flex;
 
   grid-area: content;
 }
+
 @keyframes slide {
   0%,
   14.81%,
@@ -228,3 +231,39 @@ img {
     transform: translate(-75%, 0);
   }
 }
+
+// @keyframes slide {
+//   0% {
+//     left: 0%;
+//   }
+//   10% {
+//     left: 0%;
+//   }
+//   20% {
+//     left: -100%;
+//   }
+//   30% {
+//     left: -100%;
+//   }
+//   40% {
+//     left: -200%;
+//   }
+//   50% {
+//     left: -200%;
+//   }
+//   60% {
+//     left: -300%;
+//   }
+//   70% {
+//     left: -300%;
+//   }
+//   80% {
+//     left: -400%;
+//   }
+//   90% {
+//     left: -400%;
+//   }
+//   100% {
+//     left: -500%;
+//   }
+// }
