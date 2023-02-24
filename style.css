@@ -255,6 +255,7 @@ footer {
 img {
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
 }
 
 .left-column {
@@ -273,26 +274,4 @@ img {
   border: 0.1vw #d50551 solid;
   border-radius: 0.3vw;
   box-shadow: 0.3vw 0.3vw 0.3vw #9ea9d4;
-}
-
-.slider {
-  animation: 13.5s slide infinite;
-  animation-direction: alternate;
-  display: flex;
-  grid-area: content;
-}
-
-@keyframes slide {
-  0%, 14.81%, 100% {
-    transform: translate(0, 0);
-  }
-  25.93%, 40.74% {
-    transform: translate(-25%, 0);
-  }
-  51.85%, 66.67% {
-    transform: translate(-50%, 0);
-  }
-  77.78%, 92.59% {
-    transform: translate(-75%, 0);
-  }
 }/*# sourceMappingURL=style.css.map */
