@@ -183,6 +183,7 @@ main .container_accueil {
 img {
   object-fit: cover;
   width: 100%;
+  max-height: 100%;
 }
 
 .left-column {
@@ -202,7 +203,9 @@ img {
   border-radius: 0.3vw;
   box-shadow: 0.3vw 0.3vw 0.3vw #9ea9d4;
 }
-
+.slider {
+  height: 750px;
+}
 // .slide {
 //   animation: slide 13.5s ease infinite 0s;
 //   // animation: 13.5s slidy infinite;
@@ -281,4 +284,18 @@ img {
 //   100% {
 //     left: -500%;
 //   }
+// }
+
+// @keyframes slider{
+// 	0%{left: 0%;}
+// 	5% {left: 0%;}
+// 	20% {left: -100%;}
+// 	25% {left: -100%;}
+// 	40% {left: -200%;}
+// 	45% {left: -200%;}
+// 	60% {left: -300%;}
+// 	65% {left: -300%;}
+// 	80% {left: -400%;}
+// 	85% {left: -400%;}
+// 	100% {left: 0%;}
 // }
