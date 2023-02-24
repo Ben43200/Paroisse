@@ -241,7 +241,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    grid-template-areas: "left right" ". right";
+    grid-template-areas: "left right" "coordonnees .";
   }
 }
 @media screen and (max-width: 599px) {
@@ -256,7 +256,6 @@ img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  max-height: 100%;
 }
 
 .left-column {
@@ -284,4 +283,8 @@ img {
   .slider {
     height: 370px;
   }
+}
+
+.slider {
+  overflow: hidden;
 }/*# sourceMappingURL=style.css.map */

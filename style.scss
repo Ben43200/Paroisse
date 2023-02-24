@@ -153,7 +153,7 @@ main .container_accueil {
     gap: 20px;
     grid-template-areas:
       "left right"
-      ". right";
+      "coordonnees .";
   }
   @include for-size(phone-only) {
     grid-template-columns: 1fr;
@@ -168,7 +168,7 @@ main .container_accueil {
 img {
   object-fit: cover;
   width: 100%;
-  max-height: 100%;
+  // max-height: 100%;
 }
 
 .left-column {
@@ -194,3 +194,14 @@ img {
     height: 370px;
   }
 }
+
+.slider {
+  overflow: hidden;
+}
+// .coordonees {
+//   grid-area: coordonees;
+// }
+
+// .coordonees > img {
+//   width: 50%;
+// }
