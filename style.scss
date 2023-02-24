@@ -84,22 +84,7 @@ label,
     justify-content: space-between;
   }
 }
-// @media screen and (max-width: 780px) {
-//   body {
-//     background-color: #848; /*Violet*/
-//   }
-//   .conteneur-flex {
-//     flex-flow: column wrap;
-//   }
-// main .container_accueil {
-//   // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-//   grid-template-columns: 1fr;
 
-//   gap: 20px;
-//   grid-template-areas:
-//     "left"
-//     "right";
-// }
 main {
   grid-area: main;
 }
@@ -206,96 +191,3 @@ img {
 .slider {
   height: 750px;
 }
-// .slide {
-//   animation: slide 13.5s ease infinite 0s;
-//   // animation: 13.5s slidy infinite;
-//   // animation-direction: alternate;
-
-//   display: flex;
-
-//   grid-area: content;
-//   object-fit: content;
-//   width: 100%;
-// }
-
-// .slide > img {
-//   width: 100%;
-// }
-
-// @keyframes slide {
-//   0%,
-//   14.81%,
-//   100% {
-//     transform: translate(0, 0);
-//   }
-//   25.93%,
-//   40.74% {
-//     transform: translate(-25%, 0);
-//   }
-//   51.85%,
-//   66.67% {
-//     transform: translate(-50%, 0);
-//   }
-//   77.78%,
-//   92.59% {
-//     transform: translate(-75%, 0);
-//   }
-// }
-
-// .slider {
-//   width: 90%;
-//   height: 500px;
-//   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-//     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-//   margin: 20px auto;
-// }
-
-// @keyframes slidy {
-//   0% {
-//     left: 0%;
-//   }
-//   10% {
-//     left: 0%;
-//   }
-//   20% {
-//     left: -100%;
-//   }
-//   30% {
-//     left: -100%;
-//   }
-//   40% {
-//     left: -200%;
-//   }
-//   50% {
-//     left: -200%;
-//   }
-//   60% {
-//     left: -300%;
-//   }
-//   70% {
-//     left: -300%;
-//   }
-//   80% {
-//     left: -400%;
-//   }
-//   90% {
-//     left: -400%;
-//   }
-//   100% {
-//     left: -500%;
-//   }
-// }
-
-// @keyframes slider{
-// 	0%{left: 0%;}
-// 	5% {left: 0%;}
-// 	20% {left: -100%;}
-// 	25% {left: -100%;}
-// 	40% {left: -200%;}
-// 	45% {left: -200%;}
-// 	60% {left: -300%;}
-// 	65% {left: -300%;}
-// 	80% {left: -400%;}
-// 	85% {left: -400%;}
-// 	100% {left: 0%;}
-// }
