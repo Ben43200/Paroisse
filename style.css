@@ -279,4 +279,9 @@ img {
 
 .slider {
   height: 750px;
+}
+@media screen and (min-width: 1200px) {
+  .slider {
+    height: 370px;
+  }
 }/*# sourceMappingURL=style.css.map */
