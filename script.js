@@ -17,25 +17,25 @@ var randomNum = Math.floor(Math.random() * data.length);
 
 
 
-var img = document.getElementById('img');
-// console.log(img);
+// var img = document.getElementById('img');
+// // console.log(img);
 
-var slides = ['./assets/images/im1.jpg','./assets/images/im2.jpg',' ./assets/images/im3.jpg', './assets/images/im4.jpg', './assets/images/im5.jpg'];
+// var slides = ['./assets/images/im1.jpg','./assets/images/im2.jpg',' ./assets/images/im3.jpg', './assets/images/im4.jpg', './assets/images/im5.jpg'];
 
-var Start=0;
+// var Start=0;
 
-function slider(){
-    if(Start<slides.length){
-        Start=Start+1;
-    }
-    else{
-        Start=1;
-    }
-    console.log(img);
-    img.innerHTML = "<img src="+slides[Start-1]+">";
+// function slider(){
+//     if(Start<slides.length){
+//         Start=Start+1;
+//     }
+//     else{
+//         Start=1;
+//     }
+//     console.log(img);
+//     img.innerHTML = "<img src="+slides[Start-1]+">";
    
-}
-setInterval(slider,2000);
+// }
+// setInterval(slider,2000);
 
 // var slide = ['./assets/images/im1.jpg','./assets/images/im2.jpg',' ./assets/images/im3.jpg', './assets/images/im4.jpg', './assets/images/im5.jpg'];
 

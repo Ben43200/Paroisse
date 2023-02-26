@@ -286,5 +286,58 @@ img {
 }
 
 .slider {
+  font-size: 0;
+  /*width: 799px;*/
   overflow: hidden;
+  border: 0.1vw #d50551 solid;
+  border-radius: 0.3vw;
+  box-shadow: 0.3vw 0.3vw 0.3vw #9ea9d4;
+}
+
+.slides {
+  width: 500%; /*100% par nb d'images*/
+  position: relative;
+  float: left;
+  animation: slider 20s infinite;
+}
+
+.slide {
+  width: 20%;
+  height: 449px;
+}
+
+@keyframes slider {
+  0% {
+    left: 0%;
+  }
+  5% {
+    left: 0%;
+  }
+  20% {
+    left: -100%;
+  }
+  25% {
+    left: -100%;
+  }
+  40% {
+    left: -200%;
+  }
+  45% {
+    left: -200%;
+  }
+  60% {
+    left: -300%;
+  }
+  65% {
+    left: -300%;
+  }
+  80% {
+    left: -400%;
+  }
+  85% {
+    left: -400%;
+  }
+  100% {
+    left: 0%;
+  }
 }/*# sourceMappingURL=style.css.map */
