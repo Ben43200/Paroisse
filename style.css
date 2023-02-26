@@ -247,6 +247,7 @@ footer {
 @media screen and (max-width: 599px) {
   main .container_accueil {
     grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 600px);
     gap: 20px;
     grid-template-areas: "left" "right";
   }
@@ -292,7 +293,6 @@ img {
 
 .slide {
   width: 20%;
-  height: 449px;
 }
 
 @keyframes slider {
@@ -329,4 +329,21 @@ img {
   100% {
     left: 0%;
   }
+}
+footer {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  color: #000000;
+  background-color: #8dc7a6;
+  border: 0.1vw #d50551 solid;
+  border-radius: 0.3vw;
+  box-shadow: 0.3vw 0.3vw 0.3vw #9ea9d4;
+}
+
+footer p {
+  text-align: center;
+  font-size: 0.8vw;
+  font-family: Arial, Verdana, sans-serif;
 }/*# sourceMappingURL=style.css.map */
