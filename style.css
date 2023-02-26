@@ -255,7 +255,6 @@ footer {
 img {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 100%;
 }
 
 .left-column {
@@ -277,16 +276,6 @@ img {
 }
 
 .slider {
-  height: 750px;
-}
-@media screen and (min-width: 1200px) {
-  .slider {
-    height: 370px;
-  }
-}
-
-.slider {
-  font-size: 0;
   /*width: 799px;*/
   overflow: hidden;
   border: 0.1vw #d50551 solid;
@@ -297,7 +286,7 @@ img {
 .slides {
   width: 500%; /*100% par nb d'images*/
   position: relative;
-  float: left;
+  display: flex;
   animation: slider 20s infinite;
 }
 
