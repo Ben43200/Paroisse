@@ -189,27 +189,9 @@ img {
   border-radius: 0.3vw;
   box-shadow: 0.3vw 0.3vw 0.3vw #9ea9d4;
 }
-// .slider {
-//   height: 750px;
-//   @include for-size(desktop-up) {
-//     height: 370px;
-//   }
-// }
 
-// .slider {
-//   overflow: hidden;
-// }
-// .coordonees {
-//   grid-area: coordonees;
-// }
-
-// .coordonees > img {
-//   width: 50%;
-// }
 .slider /*carrousel accueil*/ {
-  // font-size: 0;
-  // display: flex;
-  /*width: 799px;*/
+
   overflow: hidden;
   border: 0.1vw #d50551 solid;
   border-radius: 0.3vw;
