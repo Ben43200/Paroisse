@@ -331,9 +331,16 @@ img {
     left: 0%;
   }
 }
-.accueil_content {
-  grid-template-columns: repeat(2, 1fr);
-  display: grid;
+@media screen and (min-width: 600px) {
+  .accueil_content {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .accueil_content {
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+  }
 }
 
 footer {

@@ -258,8 +258,13 @@ img {
 }
 
 .accueil_content {
-  grid-template-columns: repeat(2, 1fr);
-  display: grid;
+  @include for-size(tablet-portrait-up) {
+    grid-template-columns: 1fr;
+  }
+  @include for-size(desktop-up) {
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+  }
 }
 
 footer {
