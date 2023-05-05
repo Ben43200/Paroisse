@@ -44,6 +44,7 @@ header {
 #quote {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 nav {
@@ -172,6 +173,10 @@ img {
   // max-height: 100%;
 }
 
+// .img-evenement {
+//   max-height: 740px;
+// }
+
 .left-column {
   grid-template-areas: "content";
   overflow: hidden;
@@ -191,11 +196,12 @@ img {
 }
 
 .slider /*carrousel accueil*/ {
-
   overflow: hidden;
   border: 0.1vw #d50551 solid;
   border-radius: 0.3vw;
   box-shadow: 0.3vw 0.3vw 0.3vw #9ea9d4;
+  // height: 700px;
+  // height: 740px;
   // display: inline-block;
 
   // grid-template-areas: "carousel";
@@ -203,6 +209,7 @@ img {
 .slides {
   width: 500%; /*100% par nb d'images*/
   position: relative;
+  height: 100%;
   display: flex;
   // float: left;
   animation: slider 20s infinite;
@@ -213,6 +220,7 @@ img {
   width: 20%;
   // height: 449px;
 }
+
 @keyframes slider {
   0% {
     left: 0%;
@@ -247,6 +255,11 @@ img {
   100% {
     left: 0%;
   }
+}
+
+.accueil_content {
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
 }
 
 footer {

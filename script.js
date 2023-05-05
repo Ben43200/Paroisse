@@ -17,43 +17,6 @@ var randomNum = Math.floor(Math.random() * data.length);
 
 
 
-// var img = document.getElementById('img');
-// // console.log(img);
-
-// var slides = ['./assets/images/im1.jpg','./assets/images/im2.jpg',' ./assets/images/im3.jpg', './assets/images/im4.jpg', './assets/images/im5.jpg'];
-
-// var Start=0;
-
-// function slider(){
-//     if(Start<slides.length){
-//         Start=Start+1;
-//     }
-//     else{
-//         Start=1;
-//     }
-//     console.log(img);
-//     img.innerHTML = "<img src="+slides[Start-1]+">";
-   
-// }
-// setInterval(slider,2000);
-
-// var slide = ['./assets/images/im1.jpg','./assets/images/im2.jpg',' ./assets/images/im3.jpg', './assets/images/im4.jpg', './assets/images/im5.jpg'];
-
-// var numero = 0;
-// // const totalSlider=sliders.length;
-
-// function ChangeSlide(sens) {
-//    numero = numero + sens;
-//    if (numero < 0)
-//        numero = slides.length - 1;
-//    if (numero > slides.length - 1)
-//        numero = 0;
-//    // img.innerHTML = slide[numero];
-//    img.innerHTML = "<img src="+slides[numero-1]+">";
-// }
-
-// setInterval("ChangeSlide(1)", 4000);
-
 
 
 

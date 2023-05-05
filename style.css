@@ -141,6 +141,7 @@ header {
 #quote {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 nav {
@@ -277,7 +278,6 @@ img {
 }
 
 .slider {
-  /*width: 799px;*/
   overflow: hidden;
   border: 0.1vw #d50551 solid;
   border-radius: 0.3vw;
@@ -287,6 +287,7 @@ img {
 .slides {
   width: 500%; /*100% par nb d'images*/
   position: relative;
+  height: 100%;
   display: flex;
   animation: slider 20s infinite;
 }
@@ -330,6 +331,11 @@ img {
     left: 0%;
   }
 }
+.accueil_content {
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+}
+
 footer {
   display: inline-block;
   position: relative;
