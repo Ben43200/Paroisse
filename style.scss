@@ -202,11 +202,16 @@ img {
   // grid-template-rows: auto auto;
 
   grid-area: right;
+  @include for-size(desktop-up) {
+    grid-area: left;
+  }
 }
 .right-column {
   grid-area: left;
+  @include for-size(desktop-up) {
+    grid-area: right;
+  }
 }
-
 .evenement {
   grid-area: right;
 }

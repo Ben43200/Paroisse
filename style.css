@@ -268,9 +268,19 @@ img {
   overflow: hidden;
   grid-area: right;
 }
+@media screen and (min-width: 1200px) {
+  .left-column {
+    grid-area: left;
+  }
+}
 
 .right-column {
   grid-area: left;
+}
+@media screen and (min-width: 1200px) {
+  .right-column {
+    grid-area: right;
+  }
 }
 
 .evenement {
