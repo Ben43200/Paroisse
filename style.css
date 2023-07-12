@@ -237,20 +237,18 @@ footer {
   border-color: #9ea9d4 #c90052 #c90052 #9ea9d4;
 }
 
+main .container_accueil {
+  grid-template-columns: 1fr;
+  grid-template-areas: "right" "left";
+  display: grid;
+}
 @media screen and (min-width: 1200px) {
   main .container_accueil {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    grid-template-areas: "left right" "coordonnees .";
-  }
-}
-@media screen and (max-width: 599px) {
-  main .container_accueil {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 600px);
-    gap: 20px;
-    grid-template-areas: "left" "right";
+    grid-template-areas: "left right";
+    grid-template-rows: auto;
   }
 }
 
@@ -259,14 +257,23 @@ img {
      object-fit: cover;
 }
 
+.txt-accueil {
+  grid-area: accueil;
+  font-size: 0.8rem;
+  width: 50%;
+  color: red;
+}
+
 .left-column {
-  grid-template-areas: "content";
   overflow: hidden;
-  display: grid;
-  grid-area: left;
+  grid-area: right;
 }
 
 .right-column {
+  grid-area: left;
+}
+
+.evenement {
   grid-area: right;
 }
 
@@ -282,6 +289,7 @@ img {
   border: 0.1vw #d50551 solid;
   border-radius: 0.3vw;
   box-shadow: 0.3vw 0.3vw 0.3vw #9ea9d4;
+  grid-area: carousel;
 }
 
 .slides {
@@ -331,7 +339,7 @@ img {
     left: 0%;
   }
 }
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
   .accueil_content {
     grid-template-columns: 1fr;
   }
