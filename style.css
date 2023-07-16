@@ -152,7 +152,6 @@ nav {
   nav .menu {
     flex-direction: column;
     height: 220px;
-    display: none;
   }
   nav .menu a {
     width: 25%;
@@ -437,6 +436,7 @@ footer p {
     transform: translate(-50%, -50%);
     opacity: 0;
     transition: 0.25s 0s ease-in-out;
+    width: 100%;
   }
   label a {
     margin-bottom: 1em;

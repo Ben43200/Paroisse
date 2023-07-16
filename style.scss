@@ -60,7 +60,7 @@ nav {
     // display: none;
     flex-direction: column;
     height: 220px;
-    display: none;
+    // display: none;
   }
 
   nav .menu a {
@@ -419,6 +419,7 @@ footer p {
     opacity: 0;
     -webkit-transition: 0.25s 0s ease-in-out;
     transition: 0.25s 0s ease-in-out;
+    width: 100%;
   }
 
   label a {
