@@ -445,3 +445,114 @@ footer p {
     text-decoration: none;
   }
 }/*# sourceMappingURL=style.css.map */
+
+
+
+
+
+
+.slider_diapo /*diaporama bicentenaire*/
+{
+	font-size: 0;
+	width: 640px;
+	overflow: hidden;
+	border: 1px #D50551 solid;
+	border-radius: 0.3vw;
+	box-shadow: 0.3vw 0.3vw 0.3vw #9EA9D4;
+}
+.slides_diapo
+{
+	width: 4000%; /*100% par nb d'images*/
+	position: relative;
+	float: left;
+	animation: slider_diapo 100s infinite;
+	
+}
+.slide_diapo
+{
+	width: 2.5%;
+	height: 360px;
+}
+@keyframes slider_diapo{
+	0%{left: 0%;}
+	.5% {left: 0%;}
+	2.5% {left: -100%;}
+	3% {left: -100%;}
+	5% {left: -200%;}
+	5.5% {left: -200%;}
+	7.5% {left: -300%;}
+	8% {left: -300%;}
+	10% {left: -400%;}
+	10.5% {left: -400%;}
+	12.5% {left: -500%;}
+	13% {left: -500%;}
+	15% {left: -600%;}
+	15.5% {left: -600%;}
+	17.5% {left: -700%;}
+	18% {left: -700%;}
+	20% {left: -800%;}
+	20.5% {left: -800%;}
+	22.5% {left: -900%;}
+	23% {left: -900%;}
+	25% {left: -1000%;}
+	25.5% {left: -1000%;}
+	27.5% {left: -1100%;}
+	28% {left: -1100%;}
+	30% {left: -1200%;}
+	30.5% {left: -1200%;}
+	32.5% {left: -1300%;}
+	33% {left: -1300%;}
+	35% {left: -1400%;}
+	35.5% {left: -1400%;}
+	37.5% {left: -1500%;}
+	38% {left: -1500%;}
+	40% {left: -1600%;}
+	40.5% {left: -1600%;}
+	42.5% {left: -1700%;}
+	43% {left: -1700%;}
+	45% {left: -1800%;}
+	45.5% {left: -1800%;}
+	47.5% {left: -1900%;}
+	48% {left: -1900%;}
+	50%{left: -2000%;}
+	50.5% {left: -2000%;}
+	52.5% {left: -2100%;}
+	53% {left: -2100%;}
+	55% {left: -2200%;}
+	55.5% {left: -2200%;}
+	57.5% {left: -2300%;}
+	58% {left: -2300%;}
+	60% {left: -2400%;}
+	60.5% {left: -2400%;}
+	62.5% {left: -2500%;}
+	63% {left: -2500%;}
+	65% {left: -2600%;}
+	65.5% {left: -2600%;}
+	67.5% {left: -2700%;}
+	68% {left: -2700%;}
+	70% {left: -2800%;}
+	70.5% {left: -2800%;}
+	72.5% {left: -2900%;}
+	73% {left: -2900%;}
+	75% {left: -3000%;}
+	75.5% {left: -3000%;}
+	77.5% {left: -3100%;}
+	78% {left: -3100%;}
+	80% {left: -3200%;}
+	80.5% {left: -3200%;}
+	82.5% {left: -3300%;}
+	83% {left: -3300%;}
+	85% {left: -3400%;}
+	85.5% {left: -3400%;}
+	87.5% {left: -3500%;}
+	88% {left: -3500%;}
+	90% {left: -3600%;}
+	90.5% {left: -3600%;}
+	92.5% {left: -3700%;}
+	93% {left: -3700%;}
+	95% {left: -3800%;}
+	95.5% {left: -3800%;}
+	97.5% {left: -3900%;}
+	98% {left: -3900%;}
+	100% {left: 0%;}
+}
