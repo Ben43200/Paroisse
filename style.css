@@ -104,12 +104,27 @@
 }
 
 body {
+  margin: 0;
+}
+
+body {
   display: grid;
   grid-template-areas: ". header ." ". main ." ". footer .";
   grid-template-columns: auto 1240px auto;
   font-family: Arial, Verdana, sans-serif;
   row-gap: 20px;
   grid-template-rows: 200px auto 50px;
+}
+
+@media screen and (max-width: 599px) {
+  body {
+    grid-template-columns: auto;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 959px) {
+  body {
+    grid-template-columns: auto;
+  }
 }
 
 header {
@@ -366,8 +381,6 @@ footer {
 @media screen and (max-width: 991px) {
   label .menu-2 {
     position: absolute;
-    right: -100px;
-    top: -100px;
     z-index: 100;
     width: 200px;
     height: 200px;
@@ -437,12 +450,6 @@ footer {
     display: block;
     color: #f38630;
     text-decoration: none;
-  }
-}
-@media (max-width: 640px) {
-  main {
-    /* CSS mobile ici */
-    background-color: blue;
   }
 }
 @media screen and (max-width: 599px) {
