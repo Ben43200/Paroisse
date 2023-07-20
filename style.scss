@@ -446,6 +446,16 @@ footer {
   // }
 }
 
+main {
+  @include sm {
+    background-color: blue;
+  }
+
+  @include md {
+    background-color: green;
+  }
+}
+
 // @media screen and (max-width: 1200px) {
 label input {
   display: none;
