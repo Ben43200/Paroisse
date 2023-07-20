@@ -447,7 +447,11 @@ footer {
 }
 
 main {
-  @include sm {
+  @media (max-width: 640px) {
+    /* CSS mobile ici */
+    background-color: blue;
+  }
+  @include xs {
     background-color: blue;
   }
 
