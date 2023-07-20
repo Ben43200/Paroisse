@@ -439,11 +439,10 @@ footer {
     text-decoration: none;
   }
 }
-@media screen and (max-width: 1200px) {
-  label input {
-    display: none;
-  }
+label input {
+  display: none;
 }
+
 .slider_diapo {
   font-size: 0;
   width: 640px;

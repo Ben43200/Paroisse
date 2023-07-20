@@ -446,11 +446,11 @@ footer {
   // }
 }
 
-@media screen and (max-width: 1200px) {
-  label input {
-    display: none;
-  }
+// @media screen and (max-width: 1200px) {
+label input {
+  display: none;
 }
+// }
 
 .slider_diapo /*diaporama bicentenaire*/ {
   font-size: 0;
