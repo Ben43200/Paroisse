@@ -239,8 +239,9 @@ main .container_accueil {
   grid-template-areas: "right" "left";
   display: grid;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 960px) {
   main .container_accueil {
+    background-color: blue;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -263,18 +264,22 @@ img {
 
 .left-column {
   overflow: hidden;
-  grid-area: right;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 960px) and (max-width: 1279px) {
   .left-column {
     grid-area: left;
+  }
+}
+@media screen and (max-width: 599px) {
+  .left-column {
+    grid-area: right;
   }
 }
 
 .right-column {
   grid-area: left;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 960px) {
   .right-column {
     grid-area: right;
   }

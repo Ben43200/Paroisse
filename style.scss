@@ -94,10 +94,6 @@ header {
 nav {
   grid-area: nav;
 }
-// label,
-// #toggle {
-//   display: none;
-// }
 
 @media screen and (max-width: 991px) {
   nav .menu {
@@ -111,24 +107,6 @@ nav {
     width: 25%;
     z-index: 1;
   }
-
-  //   label {
-  //     width: 40px;
-  //     display: flex;
-  //     justify-content: flex-start;
-  //     align-items: center;
-
-  //     // position: absolute;
-  //     font-size: 40px;
-  //     color: black;
-  //     cursor: pointer;
-  //   }
-
-  //   #toggle:checked + .menu {
-  //     display: flex;
-  //     justify-content: space-between;
-  //   }
-  // }
 }
 main {
   grid-area: main;
@@ -200,7 +178,12 @@ main .container_accueil {
     "right"
     "left";
   display: grid;
-  @include for-size(desktop-up) {
+  // @include for-size(desktop-up) {
+
+  // @include md {
+  @include gt-sm {
+    background-color: blue;
+    // }
     display: grid;
     // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-columns: repeat(2, 1fr);
@@ -208,17 +191,6 @@ main .container_accueil {
     grid-template-areas: "left right";
     // "right left";
     grid-template-rows: auto;
-
-    // grid-template-rows: auto auto;
-    // @include for-size(phone-only) {
-    //   grid-template-columns: 1fr;
-    //   grid-template-rows: 1fr 1fr;
-
-    //   // display: grid;
-    //   // gap: 20px;
-    //   grid-template-areas:
-    //     "right"
-    //     "left";
   }
 }
 
@@ -242,18 +214,27 @@ img {
 .left-column {
   // grid-template-areas: "content";
   overflow: hidden;
-  // display: grid;
-  // grid-template-rows: auto auto;
 
-  grid-area: right;
-  @include for-size(desktop-up) {
+  @include md {
     grid-area: left;
+    // grid-area: right;
+    // @include for-size(desktop-up) {
+    // @include md {
+    //   grid-area: left;
+  }
+  @include lt-sm {
+    // grid-area: left;
+    grid-area: right;
   }
 }
 .right-column {
   grid-area: left;
-  @include for-size(desktop-up) {
+
+  // @include for-size(desktop-up) {
+  // @include md {
+  @include gt-sm {
     grid-area: right;
+    // grid-area: left;
   }
 }
 .evenement {
@@ -363,15 +344,6 @@ footer {
   box-sizing: border-box;
 }
 
-// html { font-size: 18px; }
-
-// body {
-//   color: #e0e4cc;
-//   font-size: 1.2em;
-//   line-height: 1.6;
-//   background: #fa6900;
-//   overflow-x: hidden;
-// }
 @media screen and (max-width: 991px) {
   label .menu-2 {
     position: absolute;
