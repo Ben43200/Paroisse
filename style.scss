@@ -762,6 +762,53 @@ label input {
   }
 }
 
+.introduction {
+  color: #d50551;
+  font-size: 14px;
+  font-family: Arial, Verdana, sans-serif;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+  h2 {
+    font-size: 1.3em;
+  }
+  h3 {
+    font-size: 1.1em;
+  }
+  h4 {
+    font-size: 0.9em;
+  }
+  p {
+    font-size: 1em;
+  }
+  sup {
+    font-size: 0.7em;
+  }
+  footer p {
+    font-size: 0.7em;
+  }
+  ul li a {
+    font-size: 11px;
+  }
+  .introduction {
+    font-size: 0.9em;
+  }
+  .citation {
+    font-size: 0.8em;
+    top: 0em;
+  }
+  .styled_button {
+    font-size: 1em;
+  }
+}
+
 // #bdp {
 //   display: inline-block;
 //   position: relative;
