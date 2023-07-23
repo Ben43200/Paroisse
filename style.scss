@@ -151,7 +151,8 @@ footer {
   align-items: center;
   box-sizing: content-box;
   text-decoration: none;
-  padding: 3px 10px;
+  // padding: 3px 10px;
+  // padding: 0px 7px;
   justify-content: center;
   text-align: center;
 
@@ -159,9 +160,17 @@ footer {
     background-color: #5aabdf;
   }
 }
+
+.menu > li > ul > li > a {
+  padding: 3px 10px;
+}
+
 .menu li {
+  // position: relative;
+  // margin: 0px 15px;
   position: relative;
-  margin: 0px 15px;
+  margin: 3px;
+  width: 100%;
 }
 .menu li:hover ul {
   display: block;
