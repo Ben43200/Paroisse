@@ -192,6 +192,7 @@ footer {
   align-items: center;
   box-sizing: content-box;
   text-decoration: none;
+  padding: 3px 0px;
   justify-content: center;
   text-align: center;
 }
