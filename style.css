@@ -193,6 +193,8 @@ footer {
   box-sizing: content-box;
   text-decoration: none;
   padding: 3px 10px;
+  justify-content: center;
+  text-align: center;
 }
 .menu a:hover {
   background-color: #5aabdf;
@@ -200,6 +202,7 @@ footer {
 
 .menu li {
   position: relative;
+  margin: 0px 15px;
 }
 
 .menu li:hover ul {
