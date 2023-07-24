@@ -776,8 +776,81 @@ label input {
 .introduction {
   color: #d50551;
   font-size: 14px;
+
   font-family: Arial, Verdana, sans-serif;
   text-align: justify;
+  font-weight: bold;
+}
+
+h1 {
+  color: #d50551;
+  font-size: 1.4vw;
+  font-family: Arial, Verdana, sans-serif;
+  text-align: justify;
+  font-weight: bold;
+}
+
+.styled_button {
+  border: 0;
+  line-height: 3vw;
+  // padding: 0 2vw;
+  padding: 0 3vw 0vw 3vw;
+  font-size: 1.3vw;
+  font-weight: bold;
+  text-align: center;
+  color: #000000;
+  text-shadow: 0.1vw 0.1vw 0.1vw rgba(0, 0, 0, 0.2);
+  border-radius: 0.3vw;
+  background-color: #da1671;
+  background-image: linear-gradient(
+    top top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+  );
+  box-shadow: inset 0.1vw 0.1vw 0.2vw rgba(255, 255, 255, 0.6),
+    inset -0.1vw -0.1vw 0.2vw rgba(0, 0, 0, 0.6);
+}
+
+.position_id {
+  display: flex;
+
+  /* justify-content: space-evenly; */
+  padding: 5px;
+}
+
+.container_left {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  &.container_left > img {
+    margin-right: 2vw;
+  }
+}
+
+h3 {
+  color: #d50551;
+  // font-size: 1vw;
+  font-family: Arial, Verdana, sans-serif;
+}
+
+#boite {
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px #d50551 solid;
+  border-radius: 0.3vw;
+  box-shadow: 0.3vw 0.3vw 0.3vw #9ea9d4;
+  margin: 15px 0 0 auto;
+  padding: 5px 5px 5px 5px;
+  // font-size: 0.8vw;
+  & > p {
+    margin: 6px;
+  }
+}
+
+#strong {
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 800px) {
