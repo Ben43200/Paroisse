@@ -76,6 +76,10 @@ body {
 //     grid-template-columns: auto;
 //   }
 // }
+
+#strong {
+  font-weight: 600;
+}
 header {
   grid-area: header;
   display: grid;
