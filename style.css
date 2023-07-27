@@ -122,6 +122,10 @@ body {
   grid-template-rows: 200px auto 50px;
 }
 
+#strong {
+  font-weight: 600;
+}
+
 header {
   grid-area: header;
   display: grid;
@@ -723,9 +727,6 @@ h3 {
 }
 
 @media only screen and (max-width: 800px) {
-  body {
-    font-size: 14px;
-  }
   h1 {
     font-size: 1.5em;
   }
