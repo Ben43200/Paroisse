@@ -69,29 +69,30 @@ body {
     font-family: Arial, Verdana, sans-serif;
     row-gap: 20px;
     grid-template-rows: 13rem auto 3rem;
-    max-width: 100vw;
+    // max-width: 100vw;
+    width: 100%;
 }
 
-@media screen and (max-width: 400px) {
-    @-ms-viewport {
-        width: device-width;
-    }
-    @-webkit-viewport {
-        width: device-width;
-    }
-    @-moz-viewport {
-        width: device-width;
-    }
-    @-ms-viewport {
-        width: device-width;
-    }
-    @-o-viewport {
-        width: device-width;
-    }
-    @viewport {
-        width: device-width;
-    }
-}
+// @media screen and (max-width: 400px) {
+//     @-ms-viewport {
+//         width: device-width;
+//     }
+//     @-webkit-viewport {
+//         width: device-width;
+//     }
+//     @-moz-viewport {
+//         width: device-width;
+//     }
+//     @-ms-viewport {
+//         width: device-width;
+//     }
+//     @-o-viewport {
+//         width: device-width;
+//     }
+//     @viewport {
+//         width: device-width;
+//     }
+//   }
 // body {
 //   @include xs {
 //     grid-template-columns: auto;
