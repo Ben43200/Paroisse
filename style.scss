@@ -94,12 +94,12 @@ body {
 //     }
 //   }
 body {
-    // @include xs {
-    //     grid-template-columns: auto 600px auto;
-    // }
-    @include lt-sm {
+    @include xs {
         grid-template-columns: auto 600px auto;
     }
+    // @include lt-sm {
+    //     grid-template-columns: auto 800px auto;
+    // }
     // @include sm {
     //   grid-template-columns: auto;
     // }
