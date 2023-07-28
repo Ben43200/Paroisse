@@ -182,6 +182,12 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media screen and (max-width: 599px) {
+  .menu {
+    flex-direction: column;
+    z-index: 100;
+  }
+}
 
 .menu ul {
   display: none;
@@ -223,6 +229,11 @@ footer {
   position: relative;
   margin: 3px;
   width: 100%;
+}
+@media screen and (max-width: 599px) {
+  .menu li {
+    width: 30%;
+  }
 }
 
 .menu li:hover ul {

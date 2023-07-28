@@ -173,6 +173,10 @@ footer {
 .menu {
     display: flex;
     justify-content: center;
+    @include xs {
+        flex-direction: column;
+        z-index: 100;
+    }
 }
 
 .menu ul {
@@ -219,6 +223,9 @@ footer {
     position: relative;
     margin: 3px;
     width: 100%;
+    @include xs {
+        width: 30%;
+    }
 }
 .menu li:hover ul {
     display: block;
