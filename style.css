@@ -120,7 +120,22 @@ body {
   row-gap: 20px;
   grid-template-rows: 13rem auto 3rem;
 }
+@media screen and (max-width: 599px) {
+  body {
+    grid-template-rows: 10rem auto 3rem;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 959px) {
+  body {
+    grid-template-rows: 10rem auto 3rem;
+  }
+}
 
+@media screen and (max-width: 599px) {
+  body {
+    grid-template-columns: auto;
+  }
+}
 @media screen and (min-width: 600px) and (max-width: 959px) {
   body {
     grid-template-columns: auto;
@@ -166,6 +181,28 @@ header {
   padding: 5px;
 }
 
+@media screen and (max-width: 599px) {
+  .mini_logo {
+    height: 50%;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 959px) {
+  .mini_logo {
+    height: 50%;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .mini_localisation {
+    height: 50%;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 959px) {
+  .mini_localisation {
+    height: 50%;
+  }
+}
+
 nav {
   grid-area: nav;
 }
@@ -181,6 +218,13 @@ footer {
 .menu {
   display: flex;
   justify-content: center;
+}
+@media screen and (max-width: 599px) {
+  .menu {
+    flex-direction: column;
+    z-index: 1;
+    position: fixed;
+  }
 }
 
 .menu ul {

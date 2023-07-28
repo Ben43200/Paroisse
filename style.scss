@@ -69,6 +69,12 @@ body {
     font-family: Arial, Verdana, sans-serif;
     row-gap: 20px;
     grid-template-rows: 13rem auto 3rem;
+    @include xs {
+        grid-template-rows: 10rem auto 3rem;
+    }
+    @include sm {
+        grid-template-rows: 10rem auto 3rem;
+    }
     // max-width: 100vw;
     // width: 100%;
 }
@@ -94,9 +100,9 @@ body {
 //     }
 //   }
 body {
-    // @include xs {
-    //     grid-template-columns: auto;
-    // }
+    @include xs {
+        grid-template-columns: auto;
+    }
     // @include lt-sm {
     //     grid-template-columns: auto 800px auto;
     // }
@@ -141,7 +147,23 @@ header {
     font-size: 0.9rem;
     padding: 5px;
 }
+.mini_logo {
+    @include xs {
+        height: 50%;
+    }
+    @include sm {
+        height: 50%;
+    }
+}
 
+.mini_localisation {
+    @include xs {
+        height: 50%;
+    }
+    @include sm {
+        height: 50%;
+    }
+}
 nav {
     grid-area: nav;
 }
@@ -173,11 +195,12 @@ footer {
 .menu {
     display: flex;
     justify-content: center;
-    // @include xs {
-    //     flex-direction: column;
-    //     z-index: 100;
-    //     // position: absolute;
-    // }
+    @include xs {
+        flex-direction: column;
+        z-index: 1;
+        // position: absolute;
+        position: fixed;
+    }
 }
 
 .menu ul {
