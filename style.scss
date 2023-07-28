@@ -7,7 +7,7 @@ html {
     height: 100%;
 }
 body {
-    min-height: 100vh;
+    // min-height: 100vh;
     margin: 0;
     padding: 0;
 }
@@ -69,8 +69,8 @@ body {
     font-family: Arial, Verdana, sans-serif;
     row-gap: 20px;
     grid-template-rows: 13rem auto 3rem;
-    // max-width: 100vw;
-    width: 100%;
+    max-width: 100vw;
+    // width: 100%;
 }
 
 // @media screen and (max-width: 400px) {
@@ -93,14 +93,14 @@ body {
 //         width: device-width;
 //     }
 //   }
-// body {
-//   @include xs {
-//     grid-template-columns: auto;
-//   }
-//   @include sm {
-//     grid-template-columns: auto;
-//   }
-// }
+body {
+    @include xs {
+        grid-template-columns: auto 600px auto;
+    }
+    // @include sm {
+    //   grid-template-columns: auto;
+    // }
+}
 
 #strong {
     font-weight: 600;
