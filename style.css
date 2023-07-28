@@ -176,12 +176,6 @@ footer {
   display: flex;
   justify-content: center;
 }
-@media screen and (max-width: 599px) {
-  .menu {
-    flex-direction: column;
-    z-index: 100;
-  }
-}
 
 .menu ul {
   display: none;

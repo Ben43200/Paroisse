@@ -173,11 +173,11 @@ footer {
 .menu {
     display: flex;
     justify-content: center;
-    @include xs {
-        flex-direction: column;
-        z-index: 100;
-        // position: absolute;
-    }
+    // @include xs {
+    //     flex-direction: column;
+    //     z-index: 100;
+    //     // position: absolute;
+    // }
 }
 
 .menu ul {
