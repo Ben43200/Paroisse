@@ -94,15 +94,15 @@ body {
 //     }
 //   }
 body {
-    @include xs {
-        grid-template-columns: auto;
-    }
+    // @include xs {
+    //     grid-template-columns: auto;
+    // }
     // @include lt-sm {
     //     grid-template-columns: auto 800px auto;
     // }
-    // @include sm {
-    //   grid-template-columns: auto;
-    // }
+    @include sm {
+        grid-template-columns: auto;
+    }
 }
 
 #strong {
@@ -224,9 +224,9 @@ footer {
     position: relative;
     margin: 3px;
     width: 100%;
-    @include xs {
-        width: 30%;
-    }
+    // @include sm {
+    //     width: 30%;
+    // }
 }
 .menu li:hover ul {
     display: block;

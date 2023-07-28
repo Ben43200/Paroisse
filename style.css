@@ -121,7 +121,7 @@ body {
   grid-template-rows: 13rem auto 3rem;
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (min-width: 600px) and (max-width: 959px) {
   body {
     grid-template-columns: auto;
   }
@@ -223,11 +223,6 @@ footer {
   position: relative;
   margin: 3px;
   width: 100%;
-}
-@media screen and (max-width: 599px) {
-  .menu li {
-    width: 30%;
-  }
 }
 
 .menu li:hover ul {
