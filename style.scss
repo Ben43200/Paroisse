@@ -95,7 +95,7 @@ body {
 //   }
 body {
     @include xs {
-        grid-template-columns: auto 600px auto;
+        grid-template-columns: auto;
     }
     // @include lt-sm {
     //     grid-template-columns: auto 800px auto;
