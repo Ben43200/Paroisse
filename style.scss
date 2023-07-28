@@ -176,6 +176,7 @@ footer {
     @include xs {
         flex-direction: column;
         z-index: 100;
+        // position: absolute;
     }
 }
 
