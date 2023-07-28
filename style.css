@@ -119,7 +119,6 @@ body {
   font-family: Arial, Verdana, sans-serif;
   row-gap: 20px;
   grid-template-rows: 13rem auto 3rem;
-  max-width: 100vw;
 }
 
 @media screen and (max-width: 599px) {
