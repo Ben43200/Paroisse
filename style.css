@@ -121,6 +121,12 @@ body {
   grid-template-rows: 13rem auto 3rem;
 }
 
+@media screen and (max-width: 599px) {
+  body {
+    grid-template-columns: auto;
+  }
+}
+
 #strong {
   font-weight: 600;
 }

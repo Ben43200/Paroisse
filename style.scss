@@ -94,9 +94,9 @@ body {
 //     }
 //   }
 body {
-    // @include xs {
-    //     grid-template-columns: auto;
-    // }
+    @include xs {
+        grid-template-columns: auto;
+    }
     // @include lt-sm {
     //     grid-template-columns: auto 800px auto;
     // }
