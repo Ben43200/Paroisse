@@ -94,7 +94,10 @@ body {
 //     }
 //   }
 body {
-    @include xs {
+    // @include xs {
+    //     grid-template-columns: auto 600px auto;
+    // }
+    @include lt-sm {
         grid-template-columns: auto 600px auto;
     }
     // @include sm {
