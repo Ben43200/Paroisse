@@ -324,6 +324,11 @@ footer {
   justify-content: center;
   text-align: center;
 }
+@media screen and (max-width: 599px) {
+  .menu a {
+    width: 165px;
+  }
+}
 .menu a:hover {
   background-color: #5aabdf;
 }
@@ -344,6 +349,11 @@ footer {
   top: 41px;
   left: 0px;
   z-index: 100;
+}
+@media screen and (max-width: 599px) {
+  .menu li:hover ul {
+    left: 165px;
+  }
 }
 
 .menu ul li a:hover {
