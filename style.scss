@@ -90,6 +90,7 @@ body {
 }
 
 // Mise en place de la grid du body
+// @include gt-sm
 
 body {
     display: grid;
@@ -98,29 +99,33 @@ body {
         /* ". heading ." */
         '. main .'
         '. footer .';
-    grid-template-columns: auto 1240px auto;
+
     font-family: Arial, Verdana, sans-serif;
     row-gap: 20px;
     grid-template-rows: 10rem auto 3rem;
-    @include xs {
-        grid-template-rows: 10rem auto 3rem;
+    grid-template-columns: auto;
+    @include media(tablet) {
+        grid-template-columns: auto 1240px auto;
     }
-    @include sm {
-        grid-template-rows: 10rem auto 3rem;
-    }
+    // @include xs {
+    //     grid-template-rows: 10rem auto 3rem;
+    // }
+    // @include sm {
+    //     grid-template-rows: 10rem auto 3rem;
+    // }
 }
 
-body {
-    @include xs {
-        grid-template-columns: auto;
-    }
-    // @include lt-sm {
-    //     grid-template-columns: auto 800px auto;
-    // }
-    @include sm {
-        grid-template-columns: auto;
-    }
-}
+// body {
+//     @include xs {
+//         grid-template-columns: auto;
+//     }
+// @include lt-sm {
+//     grid-template-columns: auto 800px auto;
+// }
+//     @include sm {
+//         grid-template-columns: auto;
+//     }
+// }
 
 #strong {
     font-weight: 600;
@@ -163,25 +168,29 @@ header {
 
 //  Style logo mini en mobile
 
+// .mini_logo {
 .mini_logo {
-    @include xs {
-        height: 50%;
-    }
-    @include sm {
-        height: 50%;
+    height: 50%;
+
+    @include media(tablet) {
+        height: 100%;
     }
 }
 
 //style localistation google en mobile
 
 .mini_localisation {
-    @include xs {
-        height: 50%;
-    }
-    @include sm {
-        height: 50%;
+    height: 50%;
+    @include media(tablet) {
+        height: 75%;
     }
 }
+// @include sm {
+//     height: 1rem;
+//     @include gt-sm {
+//         height:1rem;
+//     }
+// }
 nav {
     grid-area: nav;
 }
@@ -196,13 +205,15 @@ footer {
 
 //Mise en forme du menu
 .menu {
-    display: flex;
-    justify-content: center;
-    @include xs {
-        flex-direction: column;
-        z-index: 1;
-        // position: absolute;
-        position: fixed;
+    flex-direction: column;
+    z-index: 1;
+    // position: absolute;
+    position: fixed;
+    @include media(tablet) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: relative;
     }
 }
 
