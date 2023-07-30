@@ -324,13 +324,23 @@ footer {
 .menu li {
     // position: relative;
     // margin: 0px 15px;
-    position: relative;
+    // position: relative;
     margin: 3px;
     width: 100%;
+    @media only screen and (min-width: 768px) {
+        .close {
+            color: red;
+            display: none;
+        }
 
-    // @include sm {
-    //     width: 30%;
-    // }
+        // @include sm {
+        //     width: 30%;
+        // }
+    }
+}
+.menu > li {
+    display: flex;
+    position: relative;
 }
 .menu li:hover ul {
     display: block;

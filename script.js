@@ -9,9 +9,31 @@ const fetchAsync = async() =>{
    let data = await response.json();
    // calcul aléatoire et implémentation de la citation au chargement de la page
 var randomNum = Math.floor(Math.random() * data.length);
-    document.getElementById("quote").innerHTML = data[randomNum];
+    // document.getElementById("quote").innerHTML = data[randomNum];
+    // Essai javascript condition selon le viewport
    // console.log("random",randomNum, "citations", data[randomNum]);
+//    let lo = (data[randomNum].length);
+   let longStr = data[randomNum].length
+   console.log(longStr)
+// // console.log(longStr.length)
+//    longStr = 50  &&  (window.matchMedia("(min-width: 600px)").matches) 
+// console.log(longStr)
+     document.getElementById("quote").innerHTML = data[randomNum];
+   
+    /* La largeur minimum de l'affichage est 600 px inclus */
+//   } else {
+//     /* L'affichage est inférieur à 600px de large */
+//   }{
+//     document.getElementById("quote").innerHTML = data[randomNum];
+//    }
+//    else{
+//       let citationmob = document.querySelector(".citation");
+//       citationmob.remove
+//       // documentElement.querySelector("citation").innerHTML = data[randomNum];
+
+   
    return data[randomNum];
+   
 }
 
 
