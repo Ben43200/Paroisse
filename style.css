@@ -444,6 +444,18 @@ img {
     left: 0%;
   }
 }
+@media screen and (max-width: 600px) {
+  .accueil_content {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .accueil_content {
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+  }
+}
+
 footer {
   width: 100%;
   justify-content: center;

@@ -454,15 +454,15 @@ img {
     }
 }
 // layout du accueil_content
-// .accueil_content {
-//     @include for-size(tablet-portrait-up) {
-//         grid-template-columns: 1fr;
-//     }
-//     @include for-size(desktop-up) {
-//         grid-template-columns: repeat(2, 1fr);
-//         display: grid;
-//     }
-// }
+.accueil_content {
+    @include for-size(tablet-portrait-up) {
+        grid-template-columns: 1fr;
+    }
+    @include for-size(desktop-up) {
+        grid-template-columns: repeat(2, 1fr);
+        display: grid;
+    }
+}
 
 footer {
     // display: inline-block;

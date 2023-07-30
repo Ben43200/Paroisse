@@ -23,7 +23,7 @@ let condition = longStr < 80 ? 1 : 0
 // console.log(window.matchMedia)
 console.log(condition,longStr)
 
-let taille = (window.matchMedia("(min-width: 600px)").matches) || condition ? document.getElementById("quote").innerHTML = data[randomNum] : 0  
+let taille = (window.matchMedia("(min-width: 700px)").matches) || condition ? document.getElementById("quote").innerHTML = data[randomNum] : 0  
 console.log(taille) 
 
 
