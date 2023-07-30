@@ -291,10 +291,13 @@ footer {
     display: block;
     position: absolute;
     top: 41px;
-    left: 0px;
+    // left: 0px;
+    left: 165px;
+
     z-index: 100;
-    @include xs {
-        left: 165px;
+    @include media(tablet) {
+        // left: 165px;
+        left: 0px;
     }
 }
 .menu ul li a:hover {
@@ -310,13 +313,13 @@ main .container_accueil {
     // display: grid;
     // gap: 20px;
     grid-template-areas:
-        'right'
-        'left';
+        'left'
+        'right';
     display: grid;
     // @include for-size(desktop-up) {
 
     // @include md {
-    @include gt-sm {
+    @include media(tablet) {
         // background-color: blue;
         // }
         display: grid;
@@ -351,32 +354,32 @@ img {
 .left-column {
     // grid-template-areas: "content";
     overflow: hidden;
-
-    @include md {
-        grid-area: left;
-        // grid-area: right;
-        // @include for-size(desktop-up) {
-        // @include md {
-        //   grid-area: left;
-    }
-    @include lt-sm {
-        // grid-area: left;
-        grid-area: right;
-    }
-}
-.right-column {
     grid-area: left;
+    // @include media(tablet){
+    //     grid-area: left;
+    // grid-area: right;
+    // @include for-size(desktop-up) {
+    // @include md {
+    //   grid-area: left;
+}
+// @include lt-sm {
+//     // grid-area: left;
+//     grid-area: right;
+// }
+// }
+.right-column {
+    grid-area: right;
 
     // @include for-size(desktop-up) {
     // @include md {
-    @include gt-sm {
-        grid-area: right;
-        // grid-area: left;
-    }
+    // @include gt-sm {
+    //     grid-area: right;
+    //     // grid-area: left;
+    // }
 }
-.evenement {
-    grid-area: right;
-}
+// .evenement {
+//     grid-area: right;
+// }
 
 .left-column,
 .right-column {
@@ -451,15 +454,15 @@ img {
     }
 }
 // layout du accueil_content
-.accueil_content {
-    @include for-size(tablet-portrait-up) {
-        grid-template-columns: 1fr;
-    }
-    @include for-size(desktop-up) {
-        grid-template-columns: repeat(2, 1fr);
-        display: grid;
-    }
-}
+// .accueil_content {
+//     @include for-size(tablet-portrait-up) {
+//         grid-template-columns: 1fr;
+//     }
+//     @include for-size(desktop-up) {
+//         grid-template-columns: repeat(2, 1fr);
+//         display: grid;
+//     }
+// }
 
 footer {
     // display: inline-block;
