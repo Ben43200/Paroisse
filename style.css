@@ -132,7 +132,6 @@ body {
     font-size: 25px;
     color: #818181;
     display: block;
-    transition: 0.3s;
   }
   /* 
   .menu >li >ul {
@@ -291,7 +290,7 @@ footer {
 
 .menu a {
   display: flex;
-  width: 100%;
+  width: 165px;
   height: 35px;
   color: black;
   background-color: #e26a8d; /* couleur lie de vin */
@@ -306,9 +305,9 @@ footer {
   justify-content: center;
   text-align: center;
 }
-@media screen and (max-width: 599px) {
+@media screen and (min-width: 768px) {
   .menu a {
-    width: 165px;
+    width: 100%;
   }
 }
 .menu a:hover {
@@ -322,12 +321,6 @@ footer {
 .menu li {
   margin: 3px;
   width: 100%;
-}
-@media only screen and (min-width: 768px) {
-  .menu li .close {
-    color: red;
-    display: none;
-  }
 }
 
 .menu > li {

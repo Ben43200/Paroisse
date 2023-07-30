@@ -32,7 +32,7 @@ body {
         font-size: 25px;
         color: #818181;
         display: block;
-        transition: 0.3s;
+        // transition: 0.3s;
     }
 
     /* 
@@ -228,7 +228,7 @@ footer {
 }
 .menu a {
     display: flex;
-    width: 100%;
+    width: 165px;
     height: 35px;
     // line-height: 35px;
     color: black;
@@ -245,8 +245,8 @@ footer {
     // padding: 0px 7px;
     justify-content: center;
     text-align: center;
-    @include xs {
-        width: 165px;
+    @include media(tablet) {
+        width: 100%;
     }
 
     &:hover {
@@ -262,19 +262,25 @@ footer {
     // position: relative;
     // margin: 0px 15px;
     // position: relative;
+    // display: none;
     margin: 3px;
     width: 100%;
-    @media only screen and (min-width: 768px) {
-        .close {
-            color: red;
-            display: none;
-        }
-
-        // @include sm {
-        //     width: 30%;
-        // }
-    }
+    // @include media(tablet) {
+    //     display: block;
+    // }
 }
+
+// @media only screen and (min-width: 768px) {
+//     .close {
+//         color: red;
+//         display: none;
+//     }
+
+// @include sm {
+//     width: 30%;
+// }
+// }
+// }
 .menu > li {
     display: flex;
     position: relative;
