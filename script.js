@@ -23,9 +23,10 @@ let condition = longStr < 50 ? 1 : 0
 // console.log(window.matchMedia)
 console.log(condition)
 
+let taille = (window.matchMedia("(min-width: 600px)").matches) && condition < 50 ? document.getElementById("quote").innerHTML = data[randomNum] : 0
+console.log(taille) 
 
-
-     document.getElementById("quote").innerHTML = data[randomNum];
+    //  document.getElementById("quote").innerHTML = data[randomNum];
    
     /* La largeur minimum de l'affichage est 600 px inclus */
 //   } else {
