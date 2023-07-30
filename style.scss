@@ -11,8 +11,8 @@ body {
     margin: 0;
     padding: 0;
 }
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
+    // @media screen and (min-width: 200px) and (max-width: 748px) {
     .sidenav {
         height: 100%;
         width: 170px;
