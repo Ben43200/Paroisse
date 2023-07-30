@@ -18,6 +18,13 @@ var randomNum = Math.floor(Math.random() * data.length);
 // // console.log(longStr.length)
 //    longStr = 50  &&  (window.matchMedia("(min-width: 600px)").matches) 
 // console.log(longStr)
+
+let condition = longStr < 50 ? 1 : 0
+// console.log(window.matchMedia)
+console.log(condition)
+
+
+
      document.getElementById("quote").innerHTML = data[randomNum];
    
     /* La largeur minimum de l'affichage est 600 px inclus */
