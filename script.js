@@ -19,13 +19,17 @@ var randomNum = Math.floor(Math.random() * data.length);
 //    longStr = 50  &&  (window.matchMedia("(min-width: 600px)").matches) 
 // console.log(longStr)
 
-let condition = longStr < 50 ? 1 : 0
+let condition = longStr < 80 ? 1 : 0
 // console.log(window.matchMedia)
-console.log(condition)
+console.log(condition,longStr)
 
-let taille = (window.matchMedia("(min-width: 600px)").matches) && condition < 50 ? document.getElementById("quote").innerHTML = data[randomNum] : 0
+let taille = (window.matchMedia("(min-width: 600px)").matches) || condition ? document.getElementById("quote").innerHTML = data[randomNum] : 0  
 console.log(taille) 
 
+
+
+
+// document.getElementById("quote").innerHTML = data[randomNum]  
     //  document.getElementById("quote").innerHTML = data[randomNum];
    
     /* La largeur minimum de l'affichage est 600 px inclus */
