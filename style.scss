@@ -258,6 +258,12 @@ footer {
 .menu > li > ul > li > a {
     padding: 3px 10px;
 }
+.menu > li > ul > li > a {
+    background-color: #5aabdf;
+    @include media(tablet) {
+        background-color: #e26a8d; /* couleur lie de vin */
+    }
+}
 
 .menu li {
     // position: relative;
@@ -306,6 +312,7 @@ footer {
     display: block;
     /* position: absolute; */
     // top: 41px;
+    top: 15px;
     left: 165px;
     z-index: 100;
     position: fixed;

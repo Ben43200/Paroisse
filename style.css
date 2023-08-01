@@ -317,6 +317,15 @@ footer {
   padding: 3px 10px;
 }
 
+.menu > li > ul > li > a {
+  background-color: #5aabdf;
+}
+@media screen and (min-width: 768px) {
+  .menu > li > ul > li > a {
+    background-color: #e26a8d; /* couleur lie de vin */
+  }
+}
+
 .menu li {
   margin: 3px;
   width: 100%;
@@ -330,6 +339,7 @@ footer {
 .menu li:hover ul {
   display: block;
   /* position: absolute; */
+  top: 15px;
   left: 165px;
   z-index: 100;
   position: fixed;
