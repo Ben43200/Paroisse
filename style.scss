@@ -10,6 +10,7 @@ body {
     // min-height: 100vh;
     margin: 0;
     padding: 0;
+    font-family: 'Times New Roman', Times, serif;
 }
 @media only screen and (max-width: 767px) {
     // @media screen and (min-width: 200px) and (max-width: 748px) {
@@ -101,19 +102,13 @@ body {
         '. main .'
         '. footer .';
 
-    font-family: Arial, Verdana, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     row-gap: 20px;
     grid-template-rows: 10rem auto 2rem;
     grid-template-columns: auto;
     @include media(tablet) {
         grid-template-columns: auto 1240px auto;
     }
-    // @include xs {
-    //     grid-template-rows: 10rem auto 3rem;
-    // }
-    // @include sm {
-    //     grid-template-rows: 10rem auto 3rem;
-    // }
 }
 
 // body {
@@ -155,8 +150,14 @@ header {
     grid-area: adresse;
     object-fit: cover;
 
-    display: flex;
-    justify-content: flex-end;
+    // display: flex;
+    // justify-content: flex-end;
+
+    // display: flex;
+    // justify-content: flex-end;
+    // align-content: flex-end;
+    // align-items: flex-end;
+    // align-self: baseline;
 }
 #quote {
     display: flex;

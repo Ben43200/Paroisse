@@ -78,6 +78,7 @@
   line-height: 1;
   color: black;
   background: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 * ol,
 * ul {
@@ -111,6 +112,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  font-family: "Times New Roman", Times, serif;
 }
 
 @media only screen and (max-width: 767px) {
@@ -182,7 +184,7 @@ body {
 body {
   display: grid;
   grid-template-areas: ". header ." ". main ." ". footer .";
-  font-family: Arial, Verdana, sans-serif;
+  font-family: "Times New Roman", Times, serif;
   row-gap: 20px;
   grid-template-rows: 10rem auto 2rem;
   grid-template-columns: auto;
@@ -220,8 +222,6 @@ header {
   grid-area: adresse;
   -o-object-fit: cover;
      object-fit: cover;
-  display: flex;
-  justify-content: flex-end;
 }
 
 #quote {
