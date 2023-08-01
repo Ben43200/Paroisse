@@ -288,19 +288,36 @@ footer {
 }
 
 //effet et layout du menu au survol
+// .menu li:hover ul {
+//     display: block;
+//     position: absolute;
+//     top: 41px;
+//     // left: 0px;
+//     left: 165px;
+
+//     z-index: 100;
+//     @include media(tablet) {
+//         // left: 165px;
+//         left: 0px;
+//     }
+// }
+
 .menu li:hover ul {
     display: block;
-    position: absolute;
-    top: 41px;
-    // left: 0px;
+    /* position: absolute; */
+    // top: 41px;
     left: 165px;
-
     z-index: 100;
+    position: fixed;
     @include media(tablet) {
         // left: 165px;
         left: 0px;
+        position: absolute;
+        top: 41px;
     }
+    // }
 }
+
 .menu ul li a:hover {
     background-color: #5aabdf;
     border-color: #9ea9d4 #c90052 #c90052 #9ea9d4;
