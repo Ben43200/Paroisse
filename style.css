@@ -174,18 +174,17 @@ body {
     margin: 6px 0;
   }
 }
-@media only screen and (min-width: 768px) {
-  .close {
-    color: red;
-    display: none;
-  }
+.close {
+  color: red;
+  display: none;
 }
+
 body {
   display: grid;
   grid-template-areas: ". header ." ". main ." ". footer .";
   font-family: Arial, Verdana, sans-serif;
   row-gap: 20px;
-  grid-template-rows: 10rem auto 3rem;
+  grid-template-rows: 10rem auto 2rem;
   grid-template-columns: auto;
 }
 @media screen and (min-width: 768px) {
@@ -789,13 +788,12 @@ h1 {
 }
 
 .container_left {
-  display: flex;
-  align-items: center;
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
 .container_left.container_left > img {
-  margin-right: 2vw;
+  margin-right: 0.6rem;
+  float: left;
 }
 
 h3 {

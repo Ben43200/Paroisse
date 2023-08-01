@@ -20,14 +20,23 @@ var randomNum = Math.floor(Math.random() * data.length);
 // console.log(longStr)
 
 let condition = longStr < 80 ? 1 : 0
+// let condition = longStr > 80 ? 1 : 0
+
 // console.log(window.matchMedia)
 console.log(condition,longStr)
 
 let taille = (window.matchMedia("(min-width: 700px)").matches) || condition ? document.getElementById("quote").innerHTML = data[randomNum] : 0  
+// let taille = (window.matchMedia("(min-width: 700px)").matches) || condition ? Math.floor(Math.random() * data.length) ? document.getElementById("quote").innerHTML = data[randomNum] : Math.floor(Math.random() * data.length) 
+
 console.log(taille) 
 
 
-
+// var func2 = function(affichage) {
+//     let quote = affichage
+//     return (window.matchMedia("(min-width: 700px)").matches) || condition ? document.getElementById("quote").innerHTML = data[randomNum]
+//          : condition  ? Math.floor(Math.random() * data.length)
+         
+//   }
 
 // document.getElementById("quote").innerHTML = data[randomNum]  
     //  document.getElementById("quote").innerHTML = data[randomNum];
@@ -43,7 +52,7 @@ console.log(taille)
 //       citationmob.remove
 //       // documentElement.querySelector("citation").innerHTML = data[randomNum];
 
-   
+
    return data[randomNum];
    
 }
