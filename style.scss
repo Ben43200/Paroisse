@@ -106,6 +106,7 @@ body {
     row-gap: 20px;
     grid-template-rows: 10rem auto 2rem;
     grid-template-columns: auto;
+    // background-color: red;
     @include media(tablet) {
         grid-template-columns: auto 1240px auto;
     }
