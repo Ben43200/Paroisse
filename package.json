@@ -4,3 +4,6 @@
     "sass": "^1.58.3"
   }
 }
+// "scripts": {
+//   "compile": "sass style.scss style.css --watch"
+// }

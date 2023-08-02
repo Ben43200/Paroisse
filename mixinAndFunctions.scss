@@ -23,10 +23,6 @@
 }
 
 @mixin media($size) {
-    @if $size == mobile-landscape {
-        @media screen AND (mobile-landscape) {
-            @content;
-        }
         @if $size == tablet {
             @media screen AND (min-width: 768px) {
                 @content;
@@ -49,7 +45,7 @@
             }
         }
     }
-}
+
 
 // media aliases and breakpoints
 $screen-sm-min: 600px;
