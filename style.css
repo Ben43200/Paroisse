@@ -116,7 +116,6 @@ body {
 
 @media only screen and (max-width: 767px) {
   .sidenav {
-    height: 100%;
     width: 170px;
     position: fixed;
     z-index: 1;
@@ -163,8 +162,10 @@ body {
   .sidenav .close {
     position: absolute;
     top: 0;
-    right: 25px;
-    font-size: 36px;
+    font-size: 56px;
+    right: 10px;
+    color: #e26a8d;
+    font-weight: 900;
   }
   /* Icône burger */
   .burger-icon span {
@@ -187,11 +188,6 @@ body {
   row-gap: 20px;
   grid-template-rows: 10rem auto 2rem;
   grid-template-columns: auto;
-}
-@media screen and (min-width: 768px) {
-  body {
-    grid-template-columns: auto 1240px auto;
-  }
 }
 
 #strong {
@@ -236,19 +232,9 @@ header {
 .mini_logo {
   height: 50%;
 }
-@media screen and (min-width: 768px) {
-  .mini_logo {
-    height: 100%;
-  }
-}
 
 .mini_localisation {
   height: 50%;
-}
-@media screen and (min-width: 768px) {
-  .mini_localisation {
-    height: 75%;
-  }
 }
 
 nav {
@@ -267,14 +253,6 @@ footer {
   flex-direction: column;
   z-index: 1;
   position: fixed;
-}
-@media screen and (min-width: 768px) {
-  .menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    position: relative;
-  }
 }
 
 .menu ul {
@@ -305,11 +283,6 @@ footer {
   justify-content: center;
   text-align: center;
 }
-@media screen and (min-width: 768px) {
-  .menu a {
-    width: 100%;
-  }
-}
 .menu a:hover {
   background-color: #5aabdf;
 }
@@ -320,11 +293,6 @@ footer {
 
 .menu > li > ul > li > a {
   background-color: #5aabdf;
-}
-@media screen and (min-width: 768px) {
-  .menu > li > ul > li > a {
-    background-color: #e26a8d; /* couleur lie de vin */
-  }
 }
 
 .menu li {
@@ -345,13 +313,6 @@ footer {
   z-index: 100;
   position: fixed;
 }
-@media screen and (min-width: 768px) {
-  .menu li:hover ul {
-    left: 0px;
-    position: absolute;
-    top: 41px;
-  }
-}
 
 .menu ul li a:hover {
   background-color: #5aabdf;
@@ -362,15 +323,6 @@ main .container_accueil {
   grid-template-columns: 1fr;
   grid-template-areas: "left" "right";
   display: grid;
-}
-@media screen and (min-width: 768px) {
-  main .container_accueil {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    grid-template-areas: "left right";
-    grid-template-rows: auto;
-  }
 }
 
 img {
