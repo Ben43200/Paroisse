@@ -366,6 +366,7 @@ main .container_accueil {
     // display: grid;
     // gap: 20px;
     grid-template-areas:
+        'calendar'
         'left'
         'right';
     display: grid;
@@ -971,7 +972,7 @@ h1 {
 
 .styled_button {
     border: 0;
-    line-height: 3vw;
+    // line-height: 3vw;
     // padding: 0 2vw;
     padding: 0 3vw 0vw 3vw;
     font-size: 1.3vw;
@@ -980,7 +981,9 @@ h1 {
     color: #000000;
     text-shadow: 0.1vw 0.1vw 0.1vw rgba(0, 0, 0, 0.2);
     border-radius: 0.3vw;
+    // background-color: #da1671;
     background-color: #da1671;
+
     background-image: linear-gradient(
         top top left,
         rgba(0, 0, 0, 0.2),
@@ -1072,9 +1075,22 @@ h3 {
     }
     .styled_button {
         font-size: 1em;
+        // text-decoration: none;
     }
 }
+.styled_button > a{
+    text-decoration: none;
+    // background-color: #da1671;
+    color:black;
 
+}
+.styled_button {
+    background-color: #da1671;
+
+}
+a{
+    text-decoration: none;
+}
 // #bdp {
 //   display: inline-block;
 //   position: relative;

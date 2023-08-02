@@ -371,7 +371,7 @@ footer {
 
 main .container_accueil {
   grid-template-columns: 1fr;
-  grid-template-areas: "left" "right";
+  grid-template-areas: "calendar" "left" "right";
   display: grid;
 }
 @media screen and (min-width: 768px) {
@@ -792,7 +792,6 @@ h1 {
 
 .styled_button {
   border: 0;
-  line-height: 3vw;
   padding: 0 3vw 0vw 3vw;
   font-size: 1.3vw;
   font-weight: bold;
@@ -877,4 +876,16 @@ h3 {
   .styled_button {
     font-size: 1em;
   }
+}
+.styled_button > a {
+  text-decoration: none;
+  color: black;
+}
+
+.styled_button {
+  background-color: #da1671;
+}
+
+a {
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
