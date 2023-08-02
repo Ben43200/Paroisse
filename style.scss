@@ -272,6 +272,20 @@ footer {
     }
 }
 
+
+// menu sous menu survol
+
+.menu > li > ul > li > a:hover {
+    // background-color: #5aabdf;
+    background-color: #e26a8d; /* couleur lie de vin */
+
+    @include media(tablet) {
+        // background-color: #e26a8d; /* couleur lie de vin */
+    background-color: #5aabdf;
+
+    }
+}
+
 .menu li {
     // position: relative;
     // margin: 0px 15px;
