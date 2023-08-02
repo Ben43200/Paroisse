@@ -116,11 +116,11 @@ body {
 
 @media only screen and (max-width: 767px) {
   .sidenav {
-    width: 170px;
+    width: 172px;
     position: fixed;
     z-index: 1;
     top: 0;
-    left: -170px;
+    left: -180px;
     background-color: #e8e8e8;
     padding-top: 60px;
     transition: left 0.5s ease;
