@@ -107,17 +107,28 @@ body {
 // @include gt-sm
 
 body {
+    // display: grid;
+    // grid-template-areas:
+    //     '. header .'
+    //     /* ". heading ." */
+    //     '. main .'
+    //     '. footer .';
+
+    // font-family: Arial, Verdana, sans-serif;
+    // row-gap: 20px;
+    // grid-template-rows: 10rem auto 2rem;
+    // grid-template-columns: auto;
+
     display: grid;
     grid-template-areas:
-        '. header .'
-        /* ". heading ." */
-        '. main .'
-        '. footer .';
-
+        ". header ."
+        ". main ."
+        ". footer .";
     font-family: Arial, Verdana, sans-serif;
     row-gap: 20px;
-    grid-template-rows: 10rem auto 2rem;
+    grid-template-rows: auto 1fr auto;
     grid-template-columns: auto;
+    height: 100vh;
     // background-color: red;
     @include media(tablet) {
         grid-template-columns: auto 1240px auto;
@@ -532,6 +543,7 @@ footer {
     display: flex;
     align-items: center;
     font-family: Arial, Verdana, sans-serif;
+    height: 2rem;
 }
 
 *,

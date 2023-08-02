@@ -187,8 +187,9 @@ body {
   grid-template-areas: ". header ." ". main ." ". footer .";
   font-family: Arial, Verdana, sans-serif;
   row-gap: 20px;
-  grid-template-rows: 10rem auto 2rem;
+  grid-template-rows: auto 1fr auto;
   grid-template-columns: auto;
+  height: 100vh;
 }
 @media screen and (min-width: 768px) {
   body {
@@ -490,6 +491,7 @@ footer {
   display: flex;
   align-items: center;
   font-family: Arial, Verdana, sans-serif;
+  height: 2rem;
 }
 
 *,
