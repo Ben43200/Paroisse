@@ -23,25 +23,30 @@
 }
 
 @mixin media($size) {
-    @if $size == tablet {
-        @media screen AND (min-width: 768px) {
+    @if $size == mobile-landscape {
+        @media screen AND (mobile-landscape) {
             @content;
         }
-    } @else if $size == desktop {
-        @media screen AND (min-width: 1024px) {
-            @content;
-        }
-    } @else if $size == laptop-desktop {
-        @media screen AND (min-width: 1200px) {
-            @content;
-        }
-    } @else if $size == large-desktop {
-        @media screen AND (min-width: 1800px) {
-            @content;
-        }
-    } @else if $size == desktop-model {
-        @media screen AND (min-width: 1440px) {
-            @content;
+        @if $size == tablet {
+            @media screen AND (min-width: 768px) {
+                @content;
+            }
+        } @else if $size == desktop {
+            @media screen AND (min-width: 1024px) {
+                @content;
+            }
+        } @else if $size == laptop-desktop {
+            @media screen AND (min-width: 1200px) {
+                @content;
+            }
+        } @else if $size == large-desktop {
+            @media screen AND (min-width: 1800px) {
+                @content;
+            }
+        } @else if $size == desktop-model {
+            @media screen AND (min-width: 1440px) {
+                @content;
+            }
         }
     }
 }
