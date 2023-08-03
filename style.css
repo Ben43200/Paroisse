@@ -145,17 +145,19 @@ body {
   display: flex;
   border: 0.1vw solid rgb(213, 5, 81);
   border-radius: 0.3vw;
-  box-shadow: rgb(158, 169, 212) 0.3vw 0.3vw 0.3v;
+  box-shadow: rgb(158, 169, 212) 0.3vw 0.3vw 0.3vw;
+  height: 100%;
+  width: 100%;
 }
 
 .box-calendar {
   display: flex;
+  width: 100%;
 }
 
 .date-box {
   display: flex;
   width: 45px;
-  height: 45px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -189,6 +191,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  width: 100%;
 }
 
 @media only screen and (max-width: 767px) {
