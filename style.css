@@ -390,7 +390,7 @@ footer {
 
 main .container_accueil {
   grid-template-columns: 1fr;
-  grid-template-areas: "calendar" "left" "right";
+  grid-template-areas: "calendar" "evenement" "left" "right";
   display: grid;
   gap: 20px;
 }
@@ -398,7 +398,7 @@ main .container_accueil {
   main .container_accueil {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "left calendar" "left right";
+    grid-template-areas: "left calendar" "left evenement" "left right";
     grid-template-rows: auto;
   }
 }
@@ -521,6 +521,13 @@ footer {
 .titre-evenement {
   font-size: 24px;
   text-align: center;
+  grid-area: evenement;
+}
+
+.titre-calendar {
+  font-size: 24px;
+  margin: 10px;
+  font-weight: bold;
 }
 
 label input {

@@ -26,6 +26,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    // gap:10px;
     
     
 
@@ -396,6 +397,7 @@ main .container_accueil {
     // gap: 20px;
     grid-template-areas:
         'calendar'
+        'evenement'
         'left'
         'right';
     display: grid;
@@ -411,6 +413,7 @@ main .container_accueil {
         grid-template-columns: repeat(2, 1fr);
         
         grid-template-areas: 'left calendar'
+                            'left evenement'
                             'left right';
         // "right left";
         grid-template-rows: auto;
@@ -577,7 +580,18 @@ footer {
     font-size: 24px;
     // margin-top: 60px;
     text-align: center;
+    grid-area: evenement;
+    // border: 0.1vw #d50551 solid;
+    
+    
+    
 }
+.titre-calendar{
+    font-size: 24px;
+    margin: 10px;
+    font-weight: bold;
+}
+
 //menu provisoire de la version responsive
 
 // @media screen and (max-width: 991px) {
