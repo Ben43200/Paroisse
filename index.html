@@ -1,267 +1,229 @@
 <!DOCTYPE html>
 <html lang="fr-FR">
-    <head>
-        <!-- <meta
+
+<head>
+    <!-- <meta
             name="description" content="Venez découvrir la paroisse de l'église protestante unie du crestois"
         /> -->
 
-        <meta charset="utf-8" />
-        <link href="style.css" rel="stylesheet" />
-        <meta name="viewport" content="width=device-width" />
-        <!-- <meta name="viewport" content="height=device-height" /> -->
-        <title>Église protestante unie du Crestois</title>
-        <link href="assets/images/favicon.ico" rel="shortcut icon" />
-        
+    <meta charset="utf-8" />
+    <link href="style.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- <meta name="viewport" content="height=device-height" /> -->
+    <title>Église protestante unie du Crestois</title>
+    <link href="assets/images/favicon.ico" rel="shortcut icon" />
+
     <script src="https://kit.fontawesome.com/a528402c70.js" crossorigin="anonymous"></script>
-    </head>
+</head>
 
-    <body onload="fetchAsync()">
-        <header>
-            <div class="emplacement_logo">
-                <a href="page_logo.html"
-                    ><img
-                        src="./assets/images/mini_logo_epu-crestois_2022.jpg"
-                        alt="Logo de l'Église protestante unie du Crestois"
-                        title="Logo de l'Église protestante unie du Crestois"
-                        class="mini_logo"
-                /></a>
+<body onload="fetchAsync()">
+    <header>
+        <div class="emplacement_logo">
+            <a href="page_logo.html"><img src="./assets/images/mini_logo_epu-crestois_2022.jpg"
+                    alt="Logo de l'Église protestante unie du Crestois"
+                    title="Logo de l'Église protestante unie du Crestois" class="mini_logo" /></a>
+        </div>
+        <div class="citation" id="quote"></div>
+        <div class="adresse">
+            <a href="localisation.html" target="_blank"><img src="./assets/images/adresse.jpg" alt="Épingle"
+                    title="Localisation Google Maps" style="width: 95%" class="mini_localisation" />
+            </a>
+        </div>
+        <nav>
+            <div id="mySidenav" class="sidenav">
+                <a id="closeBtn" href="#" class="close">×</a>
+                <ul class="menu">
+                    <li><a href="index.html" title="Retour à la page d'accueil">Accueil</a>
+                        <ul>
+                            <li><a href="qui_sommes-nous.html" title="Qui sommes-nous ?">Qui sommes-nous ?</a></li>
+                            <li><a href="ou_nous-trouver.html" title="Où nous trouver ?">Où nous trouver ?</a></li>
+                            <li><a href="notre_association.html" title="Notre association cultuelle">Notre
+                                    association</a></li>
+                            <li><a href="devenir_membre.html" title="Comment devenir membre ?">Devenir membre</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" title="En relation à Dieu">En relation à Dieu</a>
+                        <ul>
+                            <li><a href="culte.html" title="Le culte">Culte</a></li>
+                            <li><a href="bapteme.html" title="Le baptême">Baptême</a></li>
+                            <li><a href="cene.html" title="La sainte Cène">Cène</a></li>
+                            <li><a href="mariage.html" title="La bénédiction de mariage">Mariage</a></li>
+                            <li><a href="service_funebre.html" title="Le service funèbre">Service funèbre</a></li>
+                            <li><a href="predications.html" title="Prédications">Prédications</a></li>
+                            <li><a href="confession_de_foi.html" title="Des confessions de foi">Confessions de foi</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#" title="Vie de l'Église">Vie de l'Église</a>
+                        <ul>
+                            <li><a href="ecole_biblique.html" title="Le Club biblique">Le Club biblique</a></li>
+                            <li><a href="kt-cine.html" title="Le KT-ciné">KT-ciné</a></li>
+                            <li><a href="partage_biblique.html" title="Le partage biblique oecuménique">Partage
+                                    biblique</a></li>
+                            <li><a href="foyers_mixtes.html" title="Les foyers mixtes">Foyers mixtes</a></li>
+                            <li><a href="reunion_priere.html" title="Réunion de prière">Réunion de prière</a></li>
+                            <li><a href="halte_spirituelle.html" title="Haltes spirituelles">Haltes spirituelles</a>
+                            </li>
+                            <li><a href="sacre_petit_choeur.html" title="Le Sacré P'tit Choeur">Sacré P'tit Choeur</a>
+                            </li>
+                            <li><a href="sacre_petit_orchestre.html" title="Le Sacré P'tit Orchestre">Sacré P'tit
+                                    Orchestre</a></li>
+                            <li><a href="aumonerie_hopital.html" title="L'aumônerie hospitalière">Aumônerie
+                                    hospitalière</a>
+                            </li>
+                            <li><a href="visite.html" title="Le groupe des visites">Visites</a></li>
+                            <li><a href="atelier_creatif.html" title="Atelier créatif">Atelier créatif</a></li>
+                            <li><a href="fetes.html" title="Les fêtes">Fêtes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" title="Les associations partenaires">Nos partenaires</a>
+                        <ul>
+                            <li><a href="entraide.html" title="L'Entraide Fraternelle Protestante">Entraide</a></li>
+                            <li><a href="amotec.html" title="L'association des Amis de l'orgue">AMOTEC</a></li>
+                            <li><a href="arbre.html" title="L'association de rénovation des bâtiments">ARBRE</a></li>
+                            <li><a href="eclaireurs.html"
+                                    title="Les Eclaireurs et Eclaireuses Unionistes de France">Éclaireurs</a></li>
+                            <li><a href="eglise_verte.html" title="Église verte">Église verte</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./messages/message été 2023-95.pdf" title="Lire en ligne le dernier Message">Journal
+                            Message</a>
+                        <ul>
+                            <li><a href="./messages/message été 2023-95.pdf"
+                                    title="Lire en ligne le dernier Message">Dernier numéro</a></li>
+                            <li><a href="archives_message.html" title="Consulter les archives de Message">Les archives
+                                    du
+                                    Message</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" title="L'histoire de notre Église">Histoire</a>
+                        <ul>
+                            <li><a href="page_logo.html" title="Explications sur le logo">Le logo</a></li>
+                            <li><a href="reveil_a_crest.html" title="Le Réveil spirituel à Crest">Le Réveil à Crest</a>
+                            </li>
+                            <li><a href="bicentenaire.html" title="Le bicentenaire du temple de Crest">Le
+                                    bicentenaire</a>
+                            </li>
+                            <li><a href="ministres.html" title="Les pasteurs ayant travaillé sur le Crestois">Les
+                                    ministres</a></li>
+                            <li><a href="photos.html" title="Quelques photos">Photos</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="faire_un_don.html" title="Faire un don en ligne">Faire un don</a>
+                    </li>
+
+                    <li><a href="en_direct.html" title="Regarder le culte en direct">En direct <img
+                                src="./assets/images/logo_zoom.png" alt="Logo Zoom" title="Logo Zoom" width="7%" /></a>
+                    </li>
+                </ul>
             </div>
-            <div class="citation" id="quote"></div>
-            <div class="adresse">
-                <a href="localisation.html" target="_blank"
-                    ><img
-                        src="./assets/images/adresse.jpg"
-                        alt="Épingle"
-                        title="Localisation Google Maps"
-                        style="width: 95%"
-                        class="mini_localisation"
-                    />
-                </a>
-            </div>
-					<nav>
-			<div id="mySidenav" class="sidenav">
-				<a id="closeBtn" href="#" class="close">×</a>
-				<ul class="menu">
-					<li><a href="index.html" title="Retour à la page d'accueil">Accueil</a>
-						<ul>
-							<li><a href="qui_sommes-nous.html" title="Qui sommes-nous ?">Qui sommes-nous ?</a></li>
-							<li><a href="ou_nous-trouver.html" title="Où nous trouver ?">Où nous trouver ?</a></li>
-							<li><a href="notre_association.html" title="Notre association cultuelle">Notre association</a></li>
-							<li><a href="devenir_membre.html" title="Comment devenir membre ?">Devenir membre</a></li>
-						</ul>
-					</li>
-					<li><a href="#" title="En relation à Dieu">En relation à Dieu</a>
-						<ul>
-							<li><a href="culte.html" title="Le culte">Culte</a></li>
-							<li><a href="bapteme.html" title="Le baptême">Baptême</a></li>
-							<li><a href="cene.html" title="La sainte Cène">Cène</a></li>
-							<li><a href="mariage.html" title="La bénédiction de mariage">Mariage</a></li>
-							<li><a href="service_funebre.html" title="Le service funèbre">Service funèbre</a></li>
-							<li><a href="predications.html" title="Prédications">Prédications</a></li>
-							<li><a href="confession_de_foi.html" title="Des confessions de foi">Confessions de foi</a></li>
-						</ul>
-					</li>
-					<li><a href="#" title="Vie de l'Église">Vie de l'Église</a>
-						<ul>
-							<li><a href="ecole_biblique.html" title="Le Club biblique">Le Club biblique</a></li>
-							<li><a href="kt-cine.html" title="Le KT-ciné">KT-ciné</a></li>
-							<li><a href="partage_biblique.html" title="Le partage biblique oecuménique">Partage biblique</a></li>
-							<li><a href="foyers_mixtes.html" title="Les foyers mixtes">Foyers mixtes</a></li>
-							<li><a href="reunion_priere.html" title="Réunion de prière">Réunion de prière</a></li>
-							<li><a href="halte_spirituelle.html" title="Haltes spirituelles">Haltes spirituelles</a></li>
-							<li><a href="sacre_petit_choeur.html" title="Le Sacré P'tit Choeur">Sacré P'tit Choeur</a></li>
-							<li><a href="sacre_petit_orchestre.html" title="Le Sacré P'tit Orchestre">Sacré P'tit
-									Orchestre</a></li>
-							<li><a href="aumonerie_hopital.html" title="L'aumônerie hospitalière">Aumônerie hospitalière</a>
-							</li>
-							<li><a href="visite.html" title="Le groupe des visites">Visites</a></li>
-							<li><a href="atelier_creatif.html" title="Atelier créatif">Atelier créatif</a></li>
-							<li><a href="fetes.html" title="Les fêtes">Fêtes</a></li>
-						</ul>
-					</li>
-					<li><a href="#" title="Les associations partenaires">Nos partenaires</a>
-						<ul>
-							<li><a href="entraide.html" title="L'Entraide Fraternelle Protestante">Entraide</a></li>
-							<li><a href="amotec.html" title="L'association des Amis de l'orgue">AMOTEC</a></li>
-							<li><a href="arbre.html" title="L'association de rénovation des bâtiments">ARBRE</a></li>
-							<li><a href="eclaireurs.html"
-									title="Les Eclaireurs et Eclaireuses Unionistes de France">Éclaireurs</a></li>
-							<li><a href="eglise_verte.html" title="Église verte">Église verte</a></li>
-						</ul>
-					</li>
-					<li><a href="./messages/message été 2023-95.pdf" title="Lire en ligne le dernier Message">Journal
-							Message</a>
-						<ul>
-							<li><a href="./messages/message été 2023-95.pdf"
-									title="Lire en ligne le dernier Message">Dernier numéro</a></li>
-							<li><a href="archives_message.html" title="Consulter les archives de Message">Les archives du
-									Message</a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="#" title="L'histoire de notre Église">Histoire</a>
-						<ul>
-							<li><a href="page_logo.html" title="Explications sur le logo">Le logo</a></li>
-							<li><a href="reveil_a_crest.html" title="Le Réveil spirituel à Crest">Le Réveil à Crest</a></li>
-							<li><a href="bicentenaire.html" title="Le bicentenaire du temple de Crest">Le bicentenaire</a>
-							</li>
-							<li><a href="ministres.html" title="Les pasteurs ayant travaillé sur le Crestois">Les
-									ministres</a></li>
-							<li><a href="photos.html" title="Quelques photos">Photos</a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="faire_un_don.html" title="Faire un don en ligne">Faire un don</a>
-					</li>
-	
-					<li><a href="en_direct.html" title="Regarder le culte en direct">En direct <img
-								src="./assets/images/logo_zoom.png" alt="Logo Zoom" title="Logo Zoom" width="7%" /></a>
-					</li>
-				</ul>
-		</div>
-	</nav>
+        </nav>
 
-		<a href="#" id="openBtn">
-		  <span class="burger-icon">
-			<span></span>
-			<span></span>
-			<span></span>
-		</a>
-        </header>
-        <main>
-            <section class="container_accueil">
-                <aside class="left-column">
-                    <!-- Contenu de la colonne de gauche -->
+        <a href="#" id="openBtn">
+            <span class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+        </a>
+    </header>
+    <main>
+        <section class="container_accueil">
+            <aside class="left-column">
+                <!-- Contenu de la colonne de gauche -->
 
-                    <div class="slider">
-                        <!-- Carrousel -->
-                        <div class="slides">
-                            <img
-                                src="./assets/images/im1.webp"
-                                alt="Photo 1"
-                                title="¨Photo 1"
-                                class="slide"
-                            />
-                            <img
-                                src="./assets/images/im2.webp"
-                                alt="Photo 2"
-                                title="¨Photo 2"
-                                class="slide"
-                            />
-                            <img
-                                src="./assets/images/im3.webp"
-                                alt="Photo 3"
-                                title="¨Photo 3"
-                                class="slide"
-                            />
-                            <img
-                                src="./assets/images/im4.webp"
-                                alt="Photo 4"
-                                title="¨Photo 4"
-                                class="slide"
-                            />
-                            <img
-                                src="./assets/images/im5.jpg"
-                                alt="Photo 5"
-                                title="¨Photo 5"
-                                class="slide"
-                            />
-                        </div>
+                <div class="slider">
+                    <!-- Carrousel -->
+                    <div class="slides">
+                        <img src="./assets/images/im1.webp" alt="Photo 1" title="¨Photo 1" class="slide" />
+                        <img src="./assets/images/im2.webp" alt="Photo 2" title="¨Photo 2" class="slide" />
+                        <img src="./assets/images/im3.webp" alt="Photo 3" title="¨Photo 3" class="slide" />
+                        <img src="./assets/images/im4.webp" alt="Photo 4" title="¨Photo 4" class="slide" />
+                        <img src="./assets/images/im5.jpg" alt="Photo 5" title="¨Photo 5" class="slide" />
                     </div>
-                    <!-- <div class="contact">
+                </div>
+                <!-- <div class="contact">
 				-- <img src="./assets/images/coordonnees.jpg" class="coordonnees"> --
 			</div> -->
-                    <!-- <section class="accueil_content"> Mot d'accueil -->
-                    <div id="txt_accueil">
-                        <h1>
-                            L'Église protestante unie du Crestois vous accueille
-                        </h1>
-                        <p class="introduction">
-                            Notre Église est heureuse de recevoir votre visite.
-                            En navigant sur ce site vous allez découvrir tout ce
-                            qu’elle peut vous proposer.
-                        </p>
+                <!-- <section class="accueil_content"> Mot d'accueil -->
+                <div id="txt_accueil">
+                    <h1>
+                        L'Église protestante unie du Crestois vous accueille
+                    </h1>
+                    <p class="introduction">
+                        Notre Église est heureuse de recevoir votre visite.
+                        En navigant sur ce site vous allez découvrir tout ce
+                        qu’elle peut vous proposer.
+                    </p>
+                    <p>
+                        Si vous êtes là, ce n'est pas un hasard. Sans doute
+                        avez-vous une bonne raison... Nul doute que vous
+                        êtes présent sur notre site pour un but précis. Il
+                        est même fort probable que vous ayez une intention
+                        ou un objectif en étant là, et que ce ne soit pas un
+                        simple détour de navigation sur le web. Vous
+                        recherchez apparemment quelque chose ou quelqu'un...
+                        Mais quoi ? ou qui ? Nous ne savons rien de vos
+                        motivations, ni de vos croyances. Peut-être
+                        voulez-vous des renseignements pratiques sur notre
+                        communauté, sur les cultes, sur ses événements
+                        passés ou prochains, sur nos convictions, sur
+                        l'histoire de notre Église... Peut-être
+                        souhaitez-vous trouver du réconfort ou la paix
+                        intérieure, rencontrer d'autres personnes ou le
+                        pasteur de notre Église, ou même vous rapprocher de
+                        Dieu...
+                    </p>
+                    <div class="container_left">
+                        <img src="./assets/images/Plaque_verset.jpg" alt="Plaque à l'entrée du temple de Crest"
+                            title="Plaque à l'entrée du temple de Crest" width="200vw" />
                         <p>
-                            Si vous êtes là, ce n'est pas un hasard. Sans doute
-                            avez-vous une bonne raison... Nul doute que vous
-                            êtes présent sur notre site pour un but précis. Il
-                            est même fort probable que vous ayez une intention
-                            ou un objectif en étant là, et que ce ne soit pas un
-                            simple détour de navigation sur le web. Vous
-                            recherchez apparemment quelque chose ou quelqu'un...
-                            Mais quoi ? ou qui ? Nous ne savons rien de vos
-                            motivations, ni de vos croyances. Peut-être
-                            voulez-vous des renseignements pratiques sur notre
-                            communauté, sur les cultes, sur ses événements
-                            passés ou prochains, sur nos convictions, sur
-                            l'histoire de notre Église... Peut-être
-                            souhaitez-vous trouver du réconfort ou la paix
-                            intérieure, rencontrer d'autres personnes ou le
-                            pasteur de notre Église, ou même vous rapprocher de
-                            Dieu...
+                            Peu importe votre raison ! Dans la Bible, il y a
+                            un verset bien connu où Jésus dit ceci :
+                            <em>"Demandez, et l'on vous donnera ; cherchez,
+                                et vous trouverez ; frappez, et l'on vous
+                                ouvrira".</em>
+                            (<acronym title="La Bible, l'Evangile selon Luc, chapitre 11, verset 9">Lc 11,9</acronym>)
+                            Eh bien, vous frappez à la bonne porte.
+                            L'<strong>Église protestante unie du Crestois</strong>
+                            est une assemblée ouverte à tous, accueillante,
+                            bienveillante, tolérante, multicolore (à l'image
+                            son logo). Oui, nos temples sont ouverts aux
+                            enfants et aux adultes, aux forts et aux
+                            faibles, aux gens de passage et aux habitués,
+                            aux riches et aux pauvres... Semaine après
+                            semaine, chacun est accueilli avec ses quêtes,
+                            ses questions, ses recherches, ses demandes de
+                            réponses sur la vie, sur le monde, sur les
+                            hommes et les femmes, et bien évidemment sur
+                            Dieu, l'Eternel, celui qui est plus grand que
+                            les vivants. C'est ainsi qu'ensemble nous
+                            cheminons à la suite de Jésus Christ, en
+                            demandant, en cherchant, en frappant.
                         </p>
-                        <div class="container_left">
-                            <img
-                                src="./assets/images/Plaque_verset.jpg"
-                                alt="Plaque à l'entrée du temple de Crest"
-                                title="Plaque à l'entrée du temple de Crest"
-                                width="200vw"
-                            />
-                            <p>
-                                Peu importe votre raison ! Dans la Bible, il y a
-                                un verset bien connu où Jésus dit ceci :
-                                <em
-                                    >"Demandez, et l'on vous donnera ; cherchez,
-                                    et vous trouverez ; frappez, et l'on vous
-                                    ouvrira".</em
-                                >
-                                (<acronym
-                                    title="La Bible, l'Evangile selon Luc, chapitre 11, verset 9"
-                                    >Lc 11,9</acronym
-                                >) Eh bien, vous frappez à la bonne porte.
-                                L'<strong
-                                    >Église protestante unie du Crestois</strong
-                                >
-                                est une assemblée ouverte à tous, accueillante,
-                                bienveillante, tolérante, multicolore (à l'image
-                                son logo). Oui, nos temples sont ouverts aux
-                                enfants et aux adultes, aux forts et aux
-                                faibles, aux gens de passage et aux habitués,
-                                aux riches et aux pauvres... Semaine après
-                                semaine, chacun est accueilli avec ses quêtes,
-                                ses questions, ses recherches, ses demandes de
-                                réponses sur la vie, sur le monde, sur les
-                                hommes et les femmes, et bien évidemment sur
-                                Dieu, l'Eternel, celui qui est plus grand que
-                                les vivants. C'est ainsi qu'ensemble nous
-                                cheminons à la suite de Jésus Christ, en
-                                demandant, en cherchant, en frappant.
-                            </p>
-                        </div>
-                        <p>
-                            Et, parce que nos portes vous sont ouvertes, nul
-                            doute que vous trouverez vos propres réponses.
-                            <em
-                                >"J'ai cherché l'Eternel, et il m'a répondu ; Il
-                                m'a délivré de toutes mes peurs"</em
-                            >, dit un autre verset. (<acronym
-                                title="La Bible, le livre des Psaumes, chapitre 34, verset 4"
-                                >Ps 34,4</acronym
-                            >) Qu'il en soit de même pour vous !
-                        </p>
-                        <p>Nous vous souhaitons la bienvenue parmi nous.</p>
-
-                        <!-- <p></p> -->
                     </div>
+                    <p>
+                        Et, parce que nos portes vous sont ouvertes, nul
+                        doute que vous trouverez vos propres réponses.
+                        <em>"J'ai cherché l'Eternel, et il m'a répondu ; Il
+                            m'a délivré de toutes mes peurs"</em>, dit un autre verset. (<acronym
+                            title="La Bible, le livre des Psaumes, chapitre 34, verset 4">Ps 34,4</acronym>) Qu'il en
+                        soit de même pour vous !
+                    </p>
+                    <p>Nous vous souhaitons la bienvenue parmi nous.</p>
 
-                    <!-- </section> -->
-                </aside>
+                    <!-- <p></p> -->
+                </div>
+
+                <!-- </section> -->
+            </aside>
 
 
-                
-                <section class="calendar">
-                    <i class="fas fa-calendar-alt"></i>
-                    <button class="favorite styled_button" type="button">
+
+            <section class="calendar">
+                <i class="fas fa-calendar-alt"></i>
+                <button class="favorite styled_button" type="button">
                     <a href="messages/message été 2023-95.pdf#page=8&zoom=70" alt="Bouton Calendrier des cultes"
                         title="Bouton Calendrier des cultes" target="_blank">
                         Calendrier des cultes
@@ -273,69 +235,73 @@
 					<li class="date">13/08: 10 h 30 Culte à Blacons</li>
 					<li class="date">15/08: 18 h 00 Réunion de prière chez Daniel Vinard</p>
                     </ul> -->
-            <div class="box-container">
+                <div class="box-container">
 
-                        <div class="box-calendar">
-                            <div class="date-box">
-                                <p class="day">11</p>
-                                <p class="month">8</p>
+                    <div class="box-calendar">
+                        <div class="date-box">
+                            <p class="day">11</p>
+                            <p class="month">8</p>
+                        </div>
+                        <div class="info-box">
+                            <div class="clock">
+                                <i class="far fa-clock"></i>
+                                <p class="hour">17 h 45</p>
                             </div>
-                                    <div class="info-box"> 
-                                        <div class="clock">
-                                            <i class="far fa-clock"></i>
-                                            <p class="hour">17 h 45</p>
-                                    </div>
-                                        <h3 class="date-title">Répétition du Sacré P'tit Orchestre</h3>
+                            <h3 class="date-title">Répétition du Sacré P'tit Orchestre</h3>
                         </div>
                     </div>
 
                 </div>
-            </div>
-                        
-        </div>
-        <div class="box-calendar">
-            <div class="date-box">
-                <p class="day">11</p>
-                <p class="month">8</p>
-            </div>
-                    <div class="info-box"> 
+                </div>
+
+                </div>
+                <div class="box-container">
+                <div class="box-calendar">
+                    <div class="date-box">
+                        <p class="day">11</p>
+                        <p class="month">8</p>
+                    </div>
+                    <div class="info-box">
                         <div class="clock">
                             <i class="far fa-clock"></i>
                             <p class="hour">17 h 45</p>
-                    </div>
+                        </div>
                         <h3 class="date-title">Répétition du Sacré P'tit Orchestre</h3>
-        </div>
-    </div>
+                    </div>
+                </div>
 
-</div>
-</div>
-        
-</div>
-<div class="box-calendar">
-    <div class="date-box">
-        <p class="day">11</p>
-        <p class="month">8</p>
-    </div>
-            <div class="info-box"> 
-                <div class="clock">
-                    <i class="far fa-clock"></i>
-                    <p class="hour">17 h 45</p>
+                </div>
+                </div>
+
+                </div>
             </div>
-                <h3 class="date-title">Répétition du Sacré P'tit Orchestre</h3>
-</div>
-</div>
+            <div class="box-container">
+                <div class="box-calendar">
+                    <div class="date-box">
+                        <p class="day">11</p>
+                        <p class="month">8</p>
+                    </div>
+                    <div class="info-box">
+                        <div class="clock">
+                            <i class="far fa-clock"></i>
+                            <p class="hour">17 h 45</p>
+                        </div>
+                        <h3 class="date-title">Répétition du Sacré P'tit Orchestre</h3>
+                    </div>
+                </div>
 
-</div>
-</div>
+                </div>
+                </div>
 
-</div>
-                    
-                
-    </div>
-</section>
-                <aside class="right-column">
-                    <!-- Contenu de la colonne de droite -->
-                    <!-- <div class="calendar">
+                </div>
+
+
+                </div>
+            </div>
+            </section>
+            <aside class="right-column">
+                <!-- Contenu de la colonne de droite -->
+                <!-- <div class="calendar">
                         <i class="fas fa-calendar-alt"></i>
                         <button class="favorite styled_button" type="button">
                         <a href="messages/message été 2023-95.pdf#page=8&zoom=70" alt="Bouton Calendrier des cultes"
@@ -345,40 +311,30 @@
                     </button>
                     </div> -->
 
-                    <div class="evenement">
-                    
-                        
-                        <img
-                            class="img-evenement"
-                            src="./assets/images/Affiche_Film_Buster_Keaton.webp"
-                            alt="Film Le mécano de la General"
-                            title="Film Le mécano de la General"
-                            width="100%"
-                        />
-                    </div>
-                </aside>
-            </section>
-        </main>
-        <footer>
-            <p>
-                <a href="mentions_légales.html">Mentions légales</a> | Dernière
-                mise à jour : 25/07/2023 | © EPU Crestois 2023 | Tous droits
-                réservés | |
-                <a
-                    href="https://meteofrance.com/previsions-meteo-france/crest/26400"
-                    target="_blank"
-                    onclick="ouvre(this.href);; return false;"
-                >
-                    <img
-                        src="./assets/images/picto_meteo.jpg"
-                        alt="Météo"
-                        title="Cliquer pour les prévisions météorologiques à Crest (Météo France)"
-                        style="width: 0.9%"
-                /></a>
-                Météo | Conception : NB-BD
-            </p>
-        </footer>
-        <!-- <p class="blanc">.</p> -->
-        <script src="script.js"></script>
-    </body>
+                <div class="evenement">
+
+
+                    <img class="img-evenement" src="./assets/images/Affiche_Film_Buster_Keaton.webp"
+                        alt="Film Le mécano de la General" title="Film Le mécano de la General" width="100%" />
+                </div>
+            </aside>
+        </section>
+    </main>
+    <footer>
+        <p>
+            <a href="mentions_légales.html">Mentions légales</a> | Dernière
+            mise à jour : 25/07/2023 | © EPU Crestois 2023 | Tous droits
+            réservés | |
+            <a href="https://meteofrance.com/previsions-meteo-france/crest/26400" target="_blank"
+                onclick="ouvre(this.href);; return false;">
+                <img src="./assets/images/picto_meteo.jpg" alt="Météo"
+                    title="Cliquer pour les prévisions météorologiques à Crest (Météo France)"
+                    style="width: 0.9%" /></a>
+            Météo | Conception : NB-BD
+        </p>
+    </footer>
+    <!-- <p class="blanc">.</p> -->
+    <script src="script.js"></script>
+</body>
+
 </html>
