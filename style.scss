@@ -22,11 +22,14 @@ body {
 }
 .calendar{
     grid-area: calendar;
-    border: 0.1vw #d50551 solid;
+    // border: 0.1vw #d50551 solid;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 0px 20px 0px
+    padding: 20px 0px 20px 0px;
+    border: 0.1vw solid rgb(213, 5, 81);
+    border-radius: 0.3vw;
+    box-shadow: rgb(158, 169, 212) 0.3vw 0.3vw 0.3vw;
     // gap:10px;
     
     
@@ -418,6 +421,7 @@ main .container_accueil {
                             'left right';
         // "right left";
         grid-template-rows: auto;
+        gap: 5px;
         
     }
 }
