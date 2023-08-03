@@ -591,6 +591,19 @@ footer {
     margin: 10px;
     font-weight: bold;
 }
+.date:before {
+        content: "\f00c"; /* FontAwesome Unicode */
+        font-family: FontAwesome;
+        display: inline-block;
+        color:#DA1671;
+}
+.date{
+    font-size: 14px;
+    
+    @include media(tablet) {
+        font-size: 1rem;
+    }
+}
 
 //menu provisoire de la version responsive
 
