@@ -79,7 +79,6 @@
   color: black;
   background: white;
 }
-* ol,
 * ul {
   list-style: none;
 }
@@ -133,6 +132,48 @@ body {
   border: 0.1vw solid rgb(213, 5, 81);
   border-radius: 0.3vw;
   box-shadow: rgb(158, 169, 212) 0.3vw 0.3vw 0.3vw;
+}
+
+.box-container {
+  background-color: #FAE800;
+  display: flex;
+  border: 0.1vw solid rgb(213, 5, 81);
+  border-radius: 0.3vw;
+  box-shadow: rgb(158, 169, 212) 0.3vw 0.3vw 0.3v;
+}
+
+.box-calendar {
+  display: flex;
+}
+
+.date-box {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #e26a8d; /* couleur lie de vin */
+}
+
+.date-box > p {
+  color: white;
+}
+
+.month {
+  font-size: 15px;
+}
+
+.day {
+  font-size: 20px;
+}
+
+.date-title {
+  color: black;
+}
+
+.clock {
+  display: flex;
 }
 
 @media only screen and (max-width: 767px) {
@@ -395,7 +436,7 @@ main .container_accueil {
   grid-template-columns: 1fr;
   grid-template-areas: "calendar" "evenement" "left" "right";
   display: grid;
-  gap: 20px;
+  gap: 10px;
 }
 @media screen and (min-width: 768px) {
   main .container_accueil {
@@ -428,7 +469,6 @@ img {
   grid-area: right;
 }
 
-.left-column,
 .right-column {
   border: 0.1vw #d50551 solid;
   border-radius: 0.3vw;
@@ -441,6 +481,7 @@ img {
   border-radius: 0.3vw;
   box-shadow: 0.3vw 0.3vw 0.3vw #9ea9d4;
   grid-area: carousel;
+  margin-bottom: 10px;
 }
 
 .slides {
