@@ -117,16 +117,16 @@ body {
   font-family: Arial, Verdana, sans-serif;
 }
 
-.fa, .fas {
+.fa-calendar-alt {
   font-weight: 900;
   font-size: 40px;
   color: #5aabdf;
 }
 
-.fas, .fa-clock {
+.fa-clock {
   color: #5aabdf;
   font-size: 1.2rem;
-  margin-right: 4px;
+  margin-left: 3px;
 }
 
 .calendar {
@@ -159,7 +159,6 @@ body {
 .box-calendar {
   display: flex;
   width: 100%;
-  height: 45px;
 }
 
 .date-box {
