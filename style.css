@@ -176,11 +176,19 @@ body {
 
 .date-title {
   color: black;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .clock {
   display: flex;
   align-items: center;
+}
+
+.info-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 @media only screen and (max-width: 767px) {
