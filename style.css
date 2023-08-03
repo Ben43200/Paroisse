@@ -138,6 +138,8 @@ body {
   border: 0.1vw solid rgb(213, 5, 81);
   border-radius: 0.3vw;
   box-shadow: rgb(158, 169, 212) 0.3vw 0.3vw 0.3vw;
+  padding: 30px 80px;
+  gap: 15px;
 }
 
 .box-container {
@@ -897,7 +899,7 @@ h1 {
 
 .styled_button {
   border: 0;
-  padding: 0 3vw 0vw 3vw;
+  padding: 20px 20px;
   font-size: 1.3vw;
   font-weight: bold;
   text-align: center;
