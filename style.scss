@@ -664,6 +664,12 @@ img {
     box-shadow: $shadow;
 
     grid-area: carousel;
+    height: 280px;
+    @include media(tablet) {
+        // background-color: blue;
+        // 
+    height: 462px;
+    }
     // margin-bottom: 10px;
     // height: 280px;
     // @include media(tablet) {
