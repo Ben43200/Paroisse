@@ -1,4 +1,5 @@
 @import 'mixinAndFunctions.scss';
+@import 'variables.scss';
 
 * {
     @include reset;
@@ -34,8 +35,11 @@ body {
     align-items: center;
     padding: 20px 20px;
     border: 0.1vw solid rgb(213, 5, 81);
-    border-radius: 0.3vw;
-    box-shadow: rgb(158, 169, 212) 0.3vw 0.3vw 0.3vw;
+    // border-radius: 5.76px;
+    border-radius:$radius;
+
+    // box-shadow: red 10px 10px 10px;
+    box-shadow: $shadow;
     // padding: 30px 80px;
     gap:15px;
     @include media(tablet) {
@@ -51,9 +55,12 @@ body {
 .box-container{
     background-color:#FAE800;
     display: flex;
-    border: 0.1vw solid rgb(213, 5, 81);
-    border-radius: 0.3vw;
-    box-shadow: rgb(158, 169, 212) 0.3vw 0.3vw 0.3vw;
+    // border: 0.1vw solid rgb(213, 5, 81);
+    border: $container-border;
+    // border-radius: 0.3vw;
+    border-radius: $radius;
+    // box-shadow: rgb(158, 169, 212) 0.3vw 0.3vw 0.3vw;
+    box-shadow: $shadow;
     height: 100%;
     width: 100%;
 }
