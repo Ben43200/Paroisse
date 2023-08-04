@@ -514,7 +514,8 @@ grid-template-areas:"calendar"
     //     'left'
     //     'right';
     display: grid;
-    gap: 10px;
+    // gap: 10px;
+    gap: 20px;
     // @include for-size(desktop-up) {
 
     // @include md {
@@ -538,7 +539,7 @@ grid-template-areas:"calendar"
         grid-template-rows: auto;
         // grid-template-rows: 2fr;
         
-        gap: 5px;
+        // gap: 20px;
         
     }
 }
