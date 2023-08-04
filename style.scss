@@ -543,11 +543,11 @@ img {
     // grid-template-areas: "content";
     overflow: hidden;
     grid-area: left;
-    border: $border-color-box;
+    // border: $border-color-box;
 
-    border-radius: $radius;
-    // box-shadow: 0.3vw 0.3vw 0.3vw #9ea9d4;
-    box-shadow: $shadow;
+    // border-radius: $radius;
+    // // box-shadow: 0.3vw 0.3vw 0.3vw #9ea9d4;
+    // box-shadow: $shadow;
     // @include media(tablet){
     //     grid-area: left;
     // grid-area: right;
