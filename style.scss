@@ -24,7 +24,7 @@ body {
 
 .fa-clock{
     color:#5aabdf;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-left: 3px
 }
 .calendar{
@@ -93,13 +93,18 @@ body {
 }
 .month{
    
-    font-size: 15px;
+    font-size: 1rem;
 }
 
 .day{
-    font-size:20px
+    // font-size:15px;
+    font-size: 1.2rem;
 }
 
+.hour{
+    font-size: 0.8rem;
+    margin-left: 2px;
+}
 .date-title{
     color:black; 
     text-transform: uppercase;
@@ -512,6 +517,8 @@ main .container_accueil {
                             'left right';
         // "right left";
         grid-template-rows: auto;
+        // grid-template-rows: 2fr;
+        
         gap: 5px;
         
     }
