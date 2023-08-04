@@ -497,6 +497,12 @@ img {
   grid-area: right;
 }
 
+.evenement {
+  border: 1.92px solid rgb(213, 5, 81);
+  border-radius: 5.76px;
+  box-shadow: rgb(158, 169, 212) 5.76px 5.76px 5.76px;
+}
+
 .right-column {
   border: 1.92px solid rgb(213, 5, 81);
   border-radius: 5.76px;
@@ -510,6 +516,12 @@ img {
   box-shadow: rgb(158, 169, 212) 5.76px 5.76px 5.76px;
   grid-area: carousel;
   margin-bottom: 10px;
+  height: 280px;
+}
+@media screen and (min-width: 768px) {
+  .slider {
+    height: 462px;
+  }
 }
 
 .slides {
@@ -520,7 +532,7 @@ img {
   animation: slider 20s infinite;
 }
 
-.slide {
+.slide > img {
   width: 20%;
 }
 
