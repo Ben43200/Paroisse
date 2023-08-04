@@ -513,12 +513,6 @@ img {
   box-shadow: rgb(158, 169, 212) 5.76px 5.76px 5.76px;
   grid-area: carousel;
   margin-bottom: 10px;
-  height: 280px;
-}
-@media screen and (min-width: 768px) {
-  .slider {
-    height: 462px;
-  }
 }
 
 .slides {
@@ -529,7 +523,7 @@ img {
   animation: slider 20s infinite;
 }
 
-.slide > img {
+.slide {
   width: 20%;
 }
 
