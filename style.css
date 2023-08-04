@@ -496,6 +496,10 @@ img {
 
 .evenement {
   grid-area: evenement;
+}
+
+.evenement > img {
+  border-radius: 5.76px;
   border: 1.92px solid rgb(213, 5, 81);
   border-radius: 5.76px;
   box-shadow: rgb(158, 169, 212) 5.76px 5.76px 5.76px;
