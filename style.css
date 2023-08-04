@@ -122,6 +122,7 @@ body {
   font-weight: 900;
   font-size: 40px;
   color: #5aabdf;
+  padding: 20px;
 }
 
 .fa-clock {
@@ -149,6 +150,7 @@ body {
 
 .calendar-logo-button {
   display: flex;
+  align-items: center;
 }
 
 .box-container {
