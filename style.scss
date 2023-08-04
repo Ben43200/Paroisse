@@ -59,6 +59,7 @@ body {
 .calendar-logo-button{
     display: flex;
     align-items: center;
+    padding: 20px;
     @include media(tablet) {
        flex-direction: column; 
     

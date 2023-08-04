@@ -151,6 +151,7 @@ body {
 .calendar-logo-button {
   display: flex;
   align-items: center;
+  padding: 20px;
 }
 @media screen and (min-width: 768px) {
   .calendar-logo-button {
