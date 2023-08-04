@@ -34,7 +34,9 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 20px 20px;
-    border: 0.1vw solid rgb(213, 5, 81);
+    // border: 0.1vw solid rgb(213, 5, 81);
+    border: $border-color-box;
+
     // border-radius: 5.76px;
     border-radius:$radius;
 
@@ -56,7 +58,7 @@ body {
     background-color:#FAE800;
     display: flex;
     // border: 0.1vw solid rgb(213, 5, 81);
-    border: $container-border;
+    border: $border-color-box;
     // border-radius: 0.3vw;
     border-radius: $radius;
     // box-shadow: rgb(158, 169, 212) 0.3vw 0.3vw 0.3vw;
@@ -80,7 +82,9 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #e26a8d; /* couleur lie de vin */
+    // background-color: #e26a8d; /* couleur lie de vin */
+    background-color: $lie; 
+
 
 }
 .date-box > p {
@@ -185,7 +189,8 @@ body {
         // font-size: 36px;
         font-size: 56px;
         right: 10px;
-        color: #e26a8d;
+        // color: #e26a8d;
+        color: $lie;
         // font-weight: 900;
     }
 
@@ -262,12 +267,15 @@ header {
         'logo citation adresse'
         'nav nav nav';
     grid-template-columns: auto;
-    box-shadow: rgb(158, 169, 212) 0.3vw 0.3vw 0.3vw;
-    border-width: 0.1vw;
-    border-style: solid;
-    border-color: rgb(213, 5, 81);
+    // box-shadow: rgb(158, 169, 212) 0.3vw 0.3vw 0.3vw;
+    box-shadow: $shadow;
+    // border-width: 0.1vw;
+    // border-style: solid;
+    border: $border-color-box;
+    // border-color: rgb(213, 5, 81);
     border-image: initial;
-    border-radius: 0.3vw;
+    // border-radius: 0.3vw;
+    border-radius: $radius;
     padding: 10px;
 }
 .emplacement_logo {
@@ -361,10 +369,13 @@ footer {
     height: 35px;
     // line-height: 35px;
     color: black;
-    // background-color: #317f92;
-    background-color: #e26a8d; /* couleur lie de vin */
+    background-color: #317f92;
+
+    // background-color: #e26a8d; /* couleur lie de vin */
+    background-color: $lie; /* couleur lie de vin */
+
     border-color: #9ea9d4 #c90052 #c90052 #9ea9d4;
-    border: 0.1vw #fae800 solid;
+    border: 1.92px #fae800 solid;
     font-weight: bold;
     font-size: 0.9rem;
     align-items: center;
@@ -379,7 +390,7 @@ footer {
     }
 
     &:hover {
-        background-color: #5aabdf;
+        background-color: $second-color;
     }
 }
 //ciblage uniquement des liens dans les sous menus
@@ -387,9 +398,9 @@ footer {
     padding: 3px 10px;
 }
 .menu > li > ul > li > a {
-    background-color: #5aabdf;
+    background-color: $second-color;
     @include media(tablet) {
-        background-color: #e26a8d; /* couleur lie de vin */
+        background-color: $lie; /* couleur lie de vin */
     }
 }
 
@@ -398,11 +409,11 @@ footer {
 
 .menu > li > ul > li > a:hover {
     // background-color: #5aabdf;
-    background-color: #e26a8d; /* couleur lie de vin */
+    background-color: $lie; /* couleur lie de vin */
 
     @include media(tablet) {
         // background-color: #e26a8d; /* couleur lie de vin */
-    background-color: #5aabdf;
+    background-color: $second-color;
 
     }
 }
@@ -468,7 +479,7 @@ footer {
 }
 
 .menu ul li a:hover {
-    background-color: #5aabdf;
+    background-color: $second-color;
     border-color: #9ea9d4 #c90052 #c90052 #9ea9d4;
 }
 
@@ -521,7 +532,9 @@ img {
     font-size: 0.8rem;
     width: 50%;
     // display: grid;
-    color: red;
+    // color: red;
+    color: $primary-color;
+
 }
 
 //placement des columns selon les media queryes
@@ -529,6 +542,11 @@ img {
     // grid-template-areas: "content";
     overflow: hidden;
     grid-area: left;
+    border: $border-color-box;
+
+    border-radius: $radius;
+    // box-shadow: 0.3vw 0.3vw 0.3vw #9ea9d4;
+    box-shadow: $shadow;
     // @include media(tablet){
     //     grid-area: left;
     // grid-area: right;
@@ -562,16 +580,24 @@ img {
 //     box-shadow: 0.3vw 0.3vw 0.3vw #9ea9d4;
 // }
 .right-column{
-    border: 0.1vw #d50551 solid;
-    border-radius: 0.3vw;
-    box-shadow: 0.3vw 0.3vw 0.3vw #9ea9d4;
+    // border: 0.1vw #d50551 solid;
+    border: $border-color-box;
+
+    border-radius: $radius;
+    // box-shadow: 0.3vw 0.3vw 0.3vw #9ea9d4;
+    box-shadow: $shadow;
+
 }
 
 .slider /*carrousel accueil*/ {
     overflow: hidden;
-    border: 0.1vw #d50551 solid;
-    border-radius: 0.3vw;
-    box-shadow: 0.3vw 0.3vw 0.3vw #9ea9d4;
+    // border: 0.1vw #d50551 solid;
+    border: $border-color-box;
+
+    border-radius: $radius;
+    // box-shadow: 0.3vw 0.3vw 0.3vw #9ea9d4;
+    box-shadow: $shadow;
+
     grid-area: carousel;
     margin-bottom: 10px;
     // height: 700px;
@@ -651,9 +677,14 @@ footer {
     justify-content: center;
     color: #000000;
     background-color: #8dc7a6;
-    border: 0.1vw #d50551 solid;
-    border-radius: 0.3vw;
-    box-shadow: 0.3vw 0.3vw 0.3vw #9ea9d4;
+    // border: 0.1vw #d50551 solid;
+    border: $border-color-box;
+    // border-radius: 0.3vw;
+    border-radius: $radius;
+
+    // box-shadow: 0.3vw 0.3vw 0.3vw #9ea9d4;
+    box-shadow: $shadow;
+
     // font-size: 0.8vw;
     display: flex;
     align-items: center;
@@ -682,12 +713,12 @@ footer {
     margin: 10px;
     font-weight: bold;
 }
-.date:before {
-        content: "\f00c"; /* FontAwesome Unicode */
-        font-family: FontAwesome;
-        display: inline-block;
-        color:#DA1671;
-}
+// .date:before {
+//         content: "\f00c"; /* FontAwesome Unicode */
+//         font-family: FontAwesome;
+//         display: inline-block;
+//         color:#DA1671;
+// }
 .date{
     font-size: 14px;
     
@@ -696,143 +727,7 @@ footer {
     }
 }
 
-//menu provisoire de la version responsive
 
-// @media screen and (max-width: 991px) {
-//     label .menu-2 {
-//         position: absolute;
-//         // right: -100px;
-//         // top: -100px;
-//         z-index: 100;
-//         width: 200px;
-//         height: 200px;
-//         background: #fff;
-//         border-radius: 50% 50% 50% 50%;
-//         -webkit-transition: 0.5s ease-in-out;
-//         transition: 0.5s ease-in-out;
-//         box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
-//         cursor: pointer;
-//     }
-
-//     label .hamburger {
-//         position: absolute;
-//         top: 135px;
-//         left: 50px;
-//         width: 30px;
-//         height: 2px;
-//         background: #69d2e7;
-//         display: block;
-//         -webkit-transform-origin: center;
-//         transform-origin: center;
-//         -webkit-transition: 0.5s ease-in-out;
-//         transition: 0.5s ease-in-out;
-//     }
-
-//     label .hamburger:after,
-//     label .hamburger:before {
-//         -webkit-transition: 0.5s ease-in-out;
-//         transition: 0.5s ease-in-out;
-//         content: '';
-//         position: absolute;
-//         display: block;
-//         width: 100%;
-//         height: 100%;
-//         background: #69d2e7;
-//     }
-
-//     label .hamburger:before {
-//         top: -10px;
-//     }
-
-//     label .hamburger:after {
-//         bottom: -10px;
-//     }
-
-//     // label input {
-//     //   display: none;
-//     // }
-//     // label input[type="checkbox"].demo {
-//     //   display: none;
-//     // }
-
-//     label input:checked + .menu-2 {
-//         box-shadow: 0 0 0 100vw #fff, 0 0 0 100vh #fff;
-//         border-radius: 0;
-//     }
-
-//     label input:checked + .menu-2 .hamburger {
-//         -webkit-transform: rotate(45deg);
-//         transform: rotate(45deg);
-//     }
-
-//     label input:checked + .menu-2 .hamburger:after {
-//         -webkit-transform: rotate(90deg);
-//         transform: rotate(90deg);
-//         bottom: 0;
-//     }
-
-//     label input:checked + .menu-2 .hamburger:before {
-//         -webkit-transform: rotate(90deg);
-//         transform: rotate(90deg);
-//         top: 0;
-//     }
-
-//     label input:checked + .menu-2 + ul {
-//         opacity: 1;
-//     }
-
-//     label ul {
-//         z-index: 200;
-//         position: absolute;
-//         top: 50%;
-//         left: 50%;
-//         -webkit-transform: translate(-50%, -50%);
-//         transform: translate(-50%, -50%);
-//         opacity: 0;
-//         -webkit-transition: 0.25s 0s ease-in-out;
-//         transition: 0.25s 0s ease-in-out;
-//         width: 100%;
-//     }
-
-//     label a {
-//         margin-bottom: 1em;
-//         display: block;
-//         color: #f38630;
-//         text-decoration: none;
-//     }
-
-//     Fin du menu reponsive provisoire input.demo {
-//         display: none;
-//     }
-//     h1 {
-//         position: absolute;
-//         top: 50%;
-//         left: 50%;
-//         -webkit-transform: translate(-50%, -50%);
-//         transform: translate(-50%, -50%);
-//         width: 80%;
-//         text-align: center;
-//     }
-// }
-
-// début essai media screen color sur le main avec les mixin
-
-// main {
-//   // @media (max-width: 640px) {
-//   //   /* CSS mobile ici */
-//   //   background-color: blue;
-//   // }
-//   @include xs {
-//     background-color: blue;
-//   }
-
-//   @include md {
-//     background-color: green;
-//   }
-// }
-//   Fin de l'essai media screen color sur le main avec les mixin
-
-// @media screen and (max-width: 1200px) {
 label input {
     display: none;
 }
@@ -842,9 +737,13 @@ label input {
     font-size: 0;
     width: 640px;
     overflow: hidden;
-    border: 1px #d50551 solid;
-    border-radius: 0.3vw;
-    box-shadow: 0.3vw 0.3vw 0.3vw #9ea9d4;
+    // border: 1px #d50551 solid;
+    border: $border-color-box;
+    // border-radius: 0.3vw;
+    border-radius: $radius;
+
+    // box-shadow: 0.3vw 0.3vw 0.3vw #9ea9d4;
+    box-shadow: $shadow;
 }
 .slides_diapo {
     width: 4000%; /*100% par nb d'images*/
@@ -1105,7 +1004,8 @@ label input {
 }
 
 .introduction {
-    color: #d50551;
+    // color: #d50551;
+    color: $primary-color;
     font-size: 14px;
 
     font-family: Arial, Verdana, sans-serif;
@@ -1114,7 +1014,8 @@ label input {
 }
 
 h1 {
-    color: #d50551;
+    // color: #d50551;
+    color: $primary-color;
     font-size: 1.4vw;
     font-family: Arial, Verdana, sans-serif;
     text-align: justify;
@@ -1132,18 +1033,21 @@ h1 {
     text-align: center;
     color: #000000;
     text-shadow: 0.1vw 0.1vw 0.1vw rgba(0, 0, 0, 0.2);
-    border-radius: 0.3vw;
+    // border-radius: 0.3vw;
+    border-radius: $radius;
+
     // background-color: #da1671;
-    background-color: #da1671;
+    // background-color: #da1671;
+    background-color: $second-red;
     // height: 40px;
     margin-top: 10px;
 
-    background-image: linear-gradient(
-        top top left,
-        rgba(0, 0, 0, 0.2),
-        rgba(0, 0, 0, 0.2) 30%,
-        rgba(0, 0, 0, 0)
-    );
+    // background-image: linear-gradient(
+    //     top top left,
+    //     rgba(0, 0, 0, 0.2),
+    //     rgba(0, 0, 0, 0.2) 30%,
+    //     rgba(0, 0, 0, 0)
+    // );
     box-shadow: inset 0.1vw 0.1vw 0.2vw rgba(255, 255, 255, 0.6),
         inset -0.1vw -0.1vw 0.2vw rgba(0, 0, 0, 0.6);
 }
@@ -1169,7 +1073,10 @@ h1 {
 }
 
 h3 {
-    color: #d50551;
+    // color: #d50551;
+    color: $primary-color;
+
+
     // font-size: 1vw;
     font-family: Arial, Verdana, sans-serif;
 }
@@ -1239,7 +1146,9 @@ h3 {
 
 }
 .styled_button {
-    background-color: #da1671;
+    // background-color: #da1671;
+    background-color: $second-red;
+
 
 }
 a{

@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* couleur lie de vin */
 * {
   /* remember to define focus styles! */
   /* tables still need 'cellspacing="0"' in the markup */
@@ -135,7 +136,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 20px 20px;
-  border: 0.1vw solid rgb(213, 5, 81);
+  border: 1.92px solid rgb(213, 5, 81);
   border-radius: 5.76px;
   box-shadow: rgb(158, 169, 212) 5.76px 5.76px 5.76px;
   gap: 15px;
@@ -167,7 +168,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #e26a8d; /* couleur lie de vin */
+  background-color: #e26a8d;
 }
 
 .date-box > p {
@@ -293,13 +294,11 @@ header {
   display: grid;
   grid-template-areas: "logo citation adresse" "nav nav nav";
   grid-template-columns: auto;
-  box-shadow: rgb(158, 169, 212) 0.3vw 0.3vw 0.3vw;
-  border-width: 0.1vw;
-  border-style: solid;
-  border-color: rgb(213, 5, 81);
+  box-shadow: rgb(158, 169, 212) 5.76px 5.76px 5.76px;
+  border: 1.92px solid rgb(213, 5, 81);
   -o-border-image: initial;
      border-image: initial;
-  border-radius: 0.3vw;
+  border-radius: 5.76px;
   padding: 10px;
 }
 
@@ -383,9 +382,10 @@ footer {
   width: 165px;
   height: 35px;
   color: black;
+  background-color: #317f92;
   background-color: #e26a8d; /* couleur lie de vin */
   border-color: #9ea9d4 #c90052 #c90052 #9ea9d4;
-  border: 0.1vw #fae800 solid;
+  border: 1.92px #fae800 solid;
   font-weight: bold;
   font-size: 0.9rem;
   align-items: center;
@@ -482,12 +482,15 @@ img {
   grid-area: accueil;
   font-size: 0.8rem;
   width: 50%;
-  color: red;
+  color: #d50551;
 }
 
 .left-column {
   overflow: hidden;
   grid-area: left;
+  border: 1.92px solid rgb(213, 5, 81);
+  border-radius: 5.76px;
+  box-shadow: rgb(158, 169, 212) 5.76px 5.76px 5.76px;
 }
 
 .right-column {
@@ -495,16 +498,16 @@ img {
 }
 
 .right-column {
-  border: 0.1vw #d50551 solid;
-  border-radius: 0.3vw;
-  box-shadow: 0.3vw 0.3vw 0.3vw #9ea9d4;
+  border: 1.92px solid rgb(213, 5, 81);
+  border-radius: 5.76px;
+  box-shadow: rgb(158, 169, 212) 5.76px 5.76px 5.76px;
 }
 
 .slider {
   overflow: hidden;
-  border: 0.1vw #d50551 solid;
-  border-radius: 0.3vw;
-  box-shadow: 0.3vw 0.3vw 0.3vw #9ea9d4;
+  border: 1.92px solid rgb(213, 5, 81);
+  border-radius: 5.76px;
+  box-shadow: rgb(158, 169, 212) 5.76px 5.76px 5.76px;
   grid-area: carousel;
   margin-bottom: 10px;
 }
@@ -573,9 +576,9 @@ footer {
   justify-content: center;
   color: #000000;
   background-color: #8dc7a6;
-  border: 0.1vw #d50551 solid;
-  border-radius: 0.3vw;
-  box-shadow: 0.3vw 0.3vw 0.3vw #9ea9d4;
+  border: 1.92px solid rgb(213, 5, 81);
+  border-radius: 5.76px;
+  box-shadow: rgb(158, 169, 212) 5.76px 5.76px 5.76px;
   display: flex;
   align-items: center;
   font-family: Arial, Verdana, sans-serif;
@@ -600,13 +603,6 @@ footer {
   font-weight: bold;
 }
 
-.date:before {
-  content: "\f00c"; /* FontAwesome Unicode */
-  font-family: FontAwesome;
-  display: inline-block;
-  color: #DA1671;
-}
-
 .date {
   font-size: 14px;
 }
@@ -624,9 +620,9 @@ label input {
   font-size: 0;
   width: 640px;
   overflow: hidden;
-  border: 1px #d50551 solid;
-  border-radius: 0.3vw;
-  box-shadow: 0.3vw 0.3vw 0.3vw #9ea9d4;
+  border: 1.92px solid rgb(213, 5, 81);
+  border-radius: 5.76px;
+  box-shadow: rgb(158, 169, 212) 5.76px 5.76px 5.76px;
 }
 
 .slides_diapo {
@@ -910,10 +906,9 @@ h1 {
   text-align: center;
   color: #000000;
   text-shadow: 0.1vw 0.1vw 0.1vw rgba(0, 0, 0, 0.2);
-  border-radius: 0.3vw;
+  border-radius: 5.76px;
   background-color: #da1671;
   margin-top: 10px;
-  background-image: linear-gradient(top top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
   box-shadow: inset 0.1vw 0.1vw 0.2vw rgba(255, 255, 255, 0.6), inset -0.1vw -0.1vw 0.2vw rgba(0, 0, 0, 0.6);
 }
 
