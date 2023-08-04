@@ -618,21 +618,22 @@ img {
     //   // box-shadow: 0.3vw 0.3vw 0.3vw #9ea9d4;
     //   box-shadow: $shadow;
     grid-area: evenement;
-        // border: 0.1vw #d50551 solid;
-        // border: $border-color-box;
+        border: 0.1vw #d50551 solid;
+        border: $border-color-box;
 
-        // border-radius: $radius;
-        // // box-shadow: 0.3vw 0.3vw 0.3vw #9ea9d4;
-        // box-shadow: $shadow;
+        border-radius: $radius;
+        // box-shadow: 0.3vw 0.3vw 0.3vw #9ea9d4;
+        box-shadow: $shadow;
+        padding:5px;
 }
-.evenement >img{
-    border-radius: 5.76px;
-    border: $border-color-box;
+// .evenement >img{
+//     border-radius: 5.76px;
+//     border: $border-color-box;
 
-    border-radius: $radius;
-    // box-shadow: 0.3vw 0.3vw 0.3vw #9ea9d4;
-    box-shadow: $shadow;
-}
+//     border-radius: $radius;
+//     // box-shadow: 0.3vw 0.3vw 0.3vw #9ea9d4;
+//     box-shadow: $shadow;
+// }
 
 // .left-column,
 // .right-column {
