@@ -108,8 +108,8 @@ html {
   height: 100%;
 }
 
-ol {
-  list-style: auto;
+a {
+  text-decoration: none;
 }
 
 body {
@@ -146,6 +146,12 @@ body {
   .calendar {
     padding: 30px 80px;
   }
+}
+
+.titre-calendar {
+  font-size: 24px;
+  margin: 10px;
+  font-weight: bold;
 }
 
 .calendar-logo-button {
@@ -239,22 +245,9 @@ body {
     color: #818181;
     display: block;
   }
-  /* 
-  .menu >li >ul {
-    color: red
-  }
-
-  .menu {
-    color: blue; 
-  } */
   .sidenav a:hover {
     color: #111;
   }
-  /* .sidenav > menu {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  } */
   .sidenav ul {
     list-style-type: none;
     padding: 0;
@@ -284,7 +277,10 @@ body {
   }
 }
 .close {
-  color: red;
+  display: none;
+}
+
+label input {
   display: none;
 }
 
@@ -301,6 +297,18 @@ body {
   body {
     grid-template-columns: auto 1240px auto;
   }
+}
+
+nav {
+  grid-area: nav;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
 }
 
 #strong {
@@ -356,18 +364,6 @@ header {
   .mini_localisation {
     height: 75%;
   }
-}
-
-nav {
-  grid-area: nav;
-}
-
-main {
-  grid-area: main;
-}
-
-footer {
-  grid-area: footer;
 }
 
 .menu {
@@ -456,7 +452,6 @@ footer {
 
 .menu li:hover ul {
   display: block;
-  /* position: absolute; */
   top: 15px;
   left: 165px;
   z-index: 100;
@@ -502,10 +497,6 @@ img {
   color: #d50551;
 }
 
-.left-column {
-  overflow: hidden;
-}
-
 .evenement {
   grid-area: evenement;
   border: 0.1vw #d50551 solid;
@@ -513,12 +504,6 @@ img {
   border-radius: 5.76px;
   box-shadow: rgb(158, 169, 212) 5.76px 5.76px 5.76px;
   padding: 5px;
-}
-
-.right-column {
-  border: 1.92px solid rgb(213, 5, 81);
-  border-radius: 5.76px;
-  box-shadow: rgb(158, 169, 212) 5.76px 5.76px 5.76px;
 }
 
 .slider {
@@ -583,18 +568,6 @@ img {
     left: 0%;
   }
 }
-@media screen and (max-width: 600px) {
-  .accueil_content {
-    grid-template-columns: 1fr;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .accueil_content {
-    grid-template-columns: repeat(2, 1fr);
-    display: grid;
-  }
-}
-
 footer {
   width: 100%;
   justify-content: center;
@@ -615,18 +588,6 @@ footer {
   box-sizing: border-box;
 }
 
-.titre-evenement {
-  font-size: 24px;
-  text-align: center;
-  grid-area: evenement;
-}
-
-.titre-calendar {
-  font-size: 24px;
-  margin: 10px;
-  font-weight: bold;
-}
-
 .date {
   font-size: 14px;
 }
@@ -634,10 +595,6 @@ footer {
   .date {
     font-size: 1rem;
   }
-}
-
-label input {
-  display: none;
 }
 
 .slider_diapo {
@@ -936,9 +893,13 @@ h1 {
   box-shadow: inset 0.1vw 0.1vw 0.2vw rgba(255, 255, 255, 0.6), inset -0.1vw -0.1vw 0.2vw rgba(0, 0, 0, 0.6);
 }
 
+.styled_button > a {
+  text-decoration: none;
+  color: white;
+}
+
 .position_id {
   display: flex;
-  /* justify-content: space-evenly; */
   padding: 5px;
 }
 
@@ -1008,16 +969,4 @@ h3 {
   .styled_button {
     font-size: 1em;
   }
-}
-.styled_button > a {
-  text-decoration: none;
-  color: white;
-}
-
-.styled_button {
-  background-color: #da1671;
-}
-
-a {
-  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
