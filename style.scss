@@ -1087,9 +1087,13 @@ h3 {
     color: #000000;
     background-color: #ffffff;
     border: 1px #d50551 solid;
-    border-radius: 0.3vw;
-    box-shadow: 0.3vw 0.3vw 0.3vw #9ea9d4;
-    margin: 15px 0 0 auto;
+    // border-radius: 0.3vw;
+    border-radius: $radius;
+    // box-shadow: 0.3vw 0.3vw 0.3vw #9ea9d4;
+    box-shadow: $shadow;
+    // margin: 15px 0 0 auto;
+    margin: 4px 0px 15px;
+
     padding: 5px 5px 5px 5px;
     // font-size: 0.8vw;
     & > p {
