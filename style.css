@@ -464,7 +464,7 @@ footer {
 
 main .container_accueil {
   grid-template-columns: 1fr;
-  grid-template-areas: "calendar" "evenement" "left" "right";
+  grid-template-areas: "calendar" "carousel" "accueil" "evenement";
   display: grid;
   gap: 10px;
 }
@@ -472,7 +472,7 @@ main .container_accueil {
   main .container_accueil {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "left calendar" "left evenement" "left right";
+    grid-template-areas: "carousel calendar" "accueil evenement";
     grid-template-rows: auto;
     gap: 5px;
   }
@@ -492,11 +492,13 @@ img {
 
 .left-column {
   overflow: hidden;
-  grid-area: left;
 }
 
-.right-column {
-  grid-area: right;
+.evenement {
+  grid-area: evenement;
+  border: 1.92px solid rgb(213, 5, 81);
+  border-radius: 5.76px;
+  box-shadow: rgb(158, 169, 212) 5.76px 5.76px 5.76px;
 }
 
 .right-column {
@@ -511,7 +513,6 @@ img {
   border-radius: 5.76px;
   box-shadow: rgb(158, 169, 212) 5.76px 5.76px 5.76px;
   grid-area: carousel;
-  margin-bottom: 10px;
 }
 
 .slides {
@@ -520,6 +521,7 @@ img {
   height: 100%;
   display: flex;
   animation: slider 20s infinite;
+  grid-area: carousel;
 }
 
 .slide {
