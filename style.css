@@ -147,6 +147,10 @@ body {
   }
 }
 
+.calendar-logo-button {
+  display: flex;
+}
+
 .box-container {
   background-color: #FAE800;
   display: flex;
