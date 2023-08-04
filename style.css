@@ -151,11 +151,12 @@ body {
 .calendar-logo-button {
   display: flex;
   align-items: center;
+  flex-direction: column;
   padding: 20px;
 }
 @media screen and (min-width: 768px) {
   .calendar-logo-button {
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 
