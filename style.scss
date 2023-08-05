@@ -209,6 +209,7 @@ label input {
 
 body {
     padding: 0px 5px;
+    text-align: justify;
 
     display: grid;
     grid-template-areas:
@@ -231,7 +232,6 @@ nav {
 
 main {
     grid-area: main;
-    text-align: justify;
     // padding: 0px 5px;
     //  @include media(tablet) {
     //     padding: 0px;
