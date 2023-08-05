@@ -208,6 +208,7 @@ label input {
 // MISE EN PLACE DU GRID DU BODY  
 
 body {
+    padding: 0px 5px;
 
     display: grid;
     grid-template-areas:
@@ -221,6 +222,7 @@ body {
     height: 100vh;
     @include media(tablet) {
         grid-template-columns: auto 1240px auto;
+        padding:0px;
     }
 }
 nav {
@@ -229,6 +231,10 @@ nav {
 
 main {
     grid-area: main;
+    // padding: 0px 5px;
+    //  @include media(tablet) {
+    //     padding: 0px;
+    //  }
 }
 
 footer {
