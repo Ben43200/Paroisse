@@ -286,6 +286,7 @@ label input {
 
 body {
   padding: 0px 5px;
+  text-align: justify;
   display: grid;
   grid-template-areas: ". header ." ". main ." ". footer .";
   font-family: Arial, Verdana, sans-serif;
