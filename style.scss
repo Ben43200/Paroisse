@@ -289,10 +289,11 @@ header {
     // align-items: center;
     @include media(tablet) {
        align-items: center;
+       margin-top: 20px;
     }
 
 }
-.adresse > h3{
+.adresse-temple{
     font-size: 0.8rem;
     color: black;
     font-weight: bold;

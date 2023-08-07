@@ -357,17 +357,18 @@ header {
 @media screen and (min-width: 768px) {
   .adresse {
     align-items: center;
+    margin-top: 20px;
   }
 }
 
-.adresse > h3 {
+.adresse-temple {
   font-size: 0.8rem;
   color: black;
   font-weight: bold;
   margin-top: 4px;
 }
 @media screen and (min-width: 768px) {
-  .adresse > h3 {
+  .adresse-temple {
     font-size: 1rem;
   }
 }
