@@ -365,7 +365,6 @@ header {
   font-size: 0.8rem;
   color: black;
   font-weight: bold;
-  margin-top: 4px;
 }
 @media screen and (min-width: 768px) {
   .adresse-temple {
