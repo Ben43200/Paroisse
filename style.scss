@@ -20,7 +20,16 @@ body {
 
 
 //FONTAWESOME CONFIG
-
+.fa-map-marker-alt{
+    color: $lie;
+    font-size: 1.8rem;
+    margin-right: 5px;
+  
+    @include media(tablet) {
+        font-size: 2rem;
+        margin-right: 8px;
+    }
+}
 
   .fa-calendar-alt {
     font-weight: 900;
@@ -255,7 +264,13 @@ header {
     display: grid;
     grid-template-areas:
         'logo citation adresse'
+        // 'citation citation citation'
         'nav nav nav';
+        // @include media(tablet) {
+        //     grid-template-areas:
+        //     'logo citation adresse'
+        //     'nav nav nav';
+        // }
     grid-template-columns: auto;
     box-shadow: $shadow;
     border: $border-color-box;
@@ -271,6 +286,24 @@ header {
     object-fit: cover;
     justify-content: flex-end;
     display: flex;
+    // align-items: center;
+    @include media(tablet) {
+       align-items: center;
+    }
+
+}
+.adresse > h3{
+    font-size: 0.8rem;
+    color: black;
+    font-weight: bold;
+    margin-top: 4px;
+    // white-space: nowrap;
+    // overflow: hidden;
+    // text-overflow: ellipsis;
+    @include media(tablet) {
+        font-size: 1rem;
+    }
+    
 }
 #quote {
     display: flex;
@@ -278,6 +311,11 @@ header {
     text-align: center;
     font-size: 0.9rem;
     padding: 5px;
+    align-items: flex-end;
+    @include media(tablet) {
+        align-items: center;
+
+    }
 }
 
 //  Style logo mini en mobile
@@ -872,11 +910,15 @@ h3 {
     border-radius: $radius;
     box-shadow: $shadow;
     margin: 4px 0px 15px;
-    padding: 5px 5px 5px 5px;
+    padding: 10px 4px 25px 25px;  /*Modification BD pour que les marker des chiffres des ol soient dans la boîte */
     & > p {
         margin: 6px;
     }
 }
+/* Ajout BD  léger padding entre les li des ol pour que ça soit un peu plus aéré*/
+#boite > ol > li{
+    padding: 2px 0px;
+  }
 
 #strong {
     font-weight: bold;
