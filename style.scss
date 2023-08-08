@@ -915,7 +915,7 @@ h3 {
     border-radius: $radius;
     box-shadow: $shadow;
     margin: 4px 0px 15px;
-    padding: 10px 4px 25px 25px;  /*Modification BD pour que les marker des chiffres des ol soient dans la boîte */
+    padding: 10px 4px 25px 30px;  /*Modification BD pour que les marker des chiffres des ol soient dans la boîte */
     & > p {
         margin: 6px;
     }

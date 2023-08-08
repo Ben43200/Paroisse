@@ -964,7 +964,7 @@ h3 {
   border-radius: 5.76px;
   box-shadow: rgb(158, 169, 212) 5.76px 5.76px 5.76px;
   margin: 4px 0px 15px;
-  padding: 10px 4px 25px 25px; /*Modification BD pour que les marker des chiffres des ol soient dans la boîte */
+  padding: 10px 4px 25px 30px; /*Modification BD pour que les marker des chiffres des ol soient dans la boîte */
 }
 #boite > p {
   margin: 6px;
