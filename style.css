@@ -640,7 +640,9 @@ footer {
 }
 
 footer > p > a {
-  color: #d50551;
+  color: #9B0401;
+  font-weight: 600;
+  text-decoration: underline;
 }
 
 *,
