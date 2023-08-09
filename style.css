@@ -335,7 +335,7 @@ header {
   display: grid;
   grid-template-areas: "logo adresse adresse" "citation citation citation" "nav nav nav";
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: 70px auto auto;
   box-shadow: rgb(158, 169, 212) 5.76px 5.76px 5.76px;
   border: 1.92px solid rgb(213, 5, 81);
   -o-border-image: initial;
