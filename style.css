@@ -384,11 +384,9 @@ header {
 }
 
 #quote {
-  align-items: center;
   text-align: center;
   font-size: 0.8rem;
   font-weight: 600;
-  align-items: flex-end;
   grid-area: citation;
 }
 @media screen and (min-width: 768px) {

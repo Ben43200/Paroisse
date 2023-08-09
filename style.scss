@@ -241,10 +241,6 @@ nav {
 
 main {
     grid-area: main;
-    // padding: 0px 5px;
-    //  @include media(tablet) {
-    //     padding: 0px;
-    //  }
 }
 
 footer {
@@ -271,10 +267,7 @@ header {
             'logo citation adresse'
             'nav nav nav';
             grid-template-columns: 1fr 1fr 1fr;
-    // grid-template-columns: 1fr 1fr;
-
         }
-    // grid-template-columns: auto;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto auto;
     box-shadow: $shadow;
@@ -293,13 +286,10 @@ header {
 
 
 .adresse {
-// .lien-adresse {
-
     grid-area: adresse;
     object-fit: cover;
     justify-content: flex-end;
     display: flex;
-    // align-items: center;
     @include media(tablet) {
        align-items: center;
        margin-top: 20px;
@@ -310,25 +300,15 @@ header {
     font-size: 0.8rem;
     color: black;
     font-weight: 800;
-    // margin-top: 4px;
-
-    // white-space: nowrap;
-    // overflow: hidden;
-    // text-overflow: ellipsis;
     @include media(tablet) {
         font-size: 1rem;
     }
     
 }
 #quote {
-    // display: flex;
-    align-items: center;
     text-align: center;
     font-size: 0.8rem;
     font-weight: 600;
-    // padding: 5px;
-    align-items: flex-end;
-    // display: flex;
     grid-area: citation;
     @include media(tablet) {
         display: flex;
