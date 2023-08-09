@@ -19,7 +19,7 @@ var randomNum = Math.floor(Math.random() * data.length);
 //    longStr = 50  &&  (window.matchMedia("(min-width: 600px)").matches) 
 // console.log(longStr)
 
-let condition = longStr < 70 ? 1 : 0
+let condition = longStr < 90 ? 1 : 0
 // let condition = longStr > 80 ? 1 : 0
 
 // console.log(window.matchMedia)
