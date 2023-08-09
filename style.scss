@@ -263,15 +263,20 @@ header {
     grid-area: header;
     display: grid;
     grid-template-areas:
-        'logo citation adresse'
-        // 'citation citation citation'
+        'logo adresse adresse'
+        'citation citation citation'
         'nav nav nav';
-        // @include media(tablet) {
-        //     grid-template-areas:
-        //     'logo citation adresse'
-        //     'nav nav nav';
-        // }
-    grid-template-columns: auto;
+        @include media(tablet) {
+            grid-template-areas:
+            'logo citation adresse'
+            'nav nav nav';
+            grid-template-columns: 1fr 1fr 1fr;
+    // grid-template-columns: 1fr 1fr;
+
+        }
+    // grid-template-columns: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
     box-shadow: $shadow;
     border: $border-color-box;
     border-image: initial;
@@ -281,7 +286,15 @@ header {
 .emplacement_logo {
     grid-area: logo;
 }
+
+.lien-adresse{
+    grid-area:adresse;
+}
+
+
 .adresse {
+// .lien-adresse {
+
     grid-area: adresse;
     object-fit: cover;
     justify-content: flex-end;
@@ -308,14 +321,17 @@ header {
     
 }
 #quote {
-    display: flex;
+    // display: flex;
     align-items: center;
     text-align: center;
     font-size: 0.8rem;
     font-weight: 600;
     // padding: 5px;
     align-items: flex-end;
+    // display: flex;
+    grid-area: citation;
     @include media(tablet) {
+        display: flex;
         align-items: center;
         font-size: 1rem;
         font-weight: normal;
@@ -390,6 +406,11 @@ header {
     &:hover {
         background-color: $second-color;
     }
+}
+
+
+#openBtn{
+    grid-area: nav;
 }
 //ciblage uniquement des liens dans les sous menus
 .menu > li > ul > li > a {

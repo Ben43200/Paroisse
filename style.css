@@ -333,8 +333,9 @@ footer {
 header {
   grid-area: header;
   display: grid;
-  grid-template-areas: "logo citation adresse" "nav nav nav";
-  grid-template-columns: auto;
+  grid-template-areas: "logo adresse adresse" "citation citation citation" "nav nav nav";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
   box-shadow: rgb(158, 169, 212) 5.76px 5.76px 5.76px;
   border: 1.92px solid rgb(213, 5, 81);
   -o-border-image: initial;
@@ -342,9 +343,19 @@ header {
   border-radius: 5.76px;
   padding: 10px;
 }
+@media screen and (min-width: 768px) {
+  header {
+    grid-template-areas: "logo citation adresse" "nav nav nav";
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 
 .emplacement_logo {
   grid-area: logo;
+}
+
+.lien-adresse {
+  grid-area: adresse;
 }
 
 .adresse {
@@ -373,15 +384,16 @@ header {
 }
 
 #quote {
-  display: flex;
   align-items: center;
   text-align: center;
   font-size: 0.8rem;
   font-weight: 600;
   align-items: flex-end;
+  grid-area: citation;
 }
 @media screen and (min-width: 768px) {
   #quote {
+    display: flex;
     align-items: center;
     font-size: 1rem;
     font-weight: normal;
@@ -456,6 +468,10 @@ header {
 }
 .menu a:hover {
   background-color: #5aabdf;
+}
+
+#openBtn {
+  grid-area: nav;
 }
 
 .menu > li > ul > li > a {
