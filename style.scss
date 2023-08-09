@@ -569,6 +569,9 @@ footer {
     font-family: Arial, Verdana, sans-serif;
     height: 2rem;
 }
+footer > p >a {
+    color:blue;
+}
 
 *,
 *:before,
