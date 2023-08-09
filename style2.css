@@ -538,6 +538,10 @@ footer p
 	font-size: 0.8vw;
 	font-family: Arial, Verdana, sans-serif;
 }
+
+footer .p .a{
+	text-decoration: underline;
+}
 @media only screen and (max-width: 800px) {
 	body {
 		font-size: 14px;
