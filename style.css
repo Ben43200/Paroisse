@@ -399,7 +399,8 @@ header {
 }
 
 .mini_logo {
-  height: 50%;
+  height: 60%;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .mini_logo {
