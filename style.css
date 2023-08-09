@@ -347,6 +347,7 @@ header {
   header {
     grid-template-areas: "logo citation adresse" "nav nav nav";
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
   }
 }
 
@@ -405,6 +406,7 @@ header {
 @media screen and (min-width: 768px) {
   .mini_logo {
     height: 100%;
+    width: 50%;
   }
 }
 

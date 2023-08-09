@@ -267,6 +267,7 @@ header {
             'logo citation adresse'
             'nav nav nav';
             grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto auto auto;
         }
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 70px auto auto;
@@ -328,6 +329,7 @@ header {
 
     @include media(tablet) {
         height: 100%;
+        width: 50%;
     }
 }
 
