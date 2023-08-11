@@ -324,8 +324,8 @@ header {
 
 // .mini_logo {
 .mini_logo {
-    height: 60%;
-    width: 100%;
+    height: 50px;
+    // width: 100%;
 
     @include media(tablet) {
         height: 100%;

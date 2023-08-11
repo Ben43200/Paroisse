@@ -399,9 +399,9 @@ header {
   }
 }
 
+ /* modification du height à 50px en mobile, suppression du width à 100%*/
 .mini_logo {
-  height: 60%;
-  width: 100%;
+  height: 50px;
 }
 @media screen and (min-width: 768px) {
   .mini_logo {
