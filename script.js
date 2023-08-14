@@ -9,49 +9,7 @@ const fetchAsync = async() =>{
    let data = await response.json();
    // calcul aléatoire et implémentation de la citation au chargement de la page
 var randomNum = Math.floor(Math.random() * data.length);
-    // document.getElementById("quote").innerHTML = data[randomNum];
-    // Essai javascript condition selon le viewport
-   // console.log("random",randomNum, "citations", data[randomNum]);
-//    let lo = (data[randomNum].length);
-   let longStr = data[randomNum].length
-   console.log(longStr)
-// // console.log(longStr.length)
-//    longStr = 50  &&  (window.matchMedia("(min-width: 600px)").matches) 
-// console.log(longStr)
-
-let condition = longStr < 90 ? 1 : 0
-// let condition = longStr > 80 ? 1 : 0
-
-// console.log(window.matchMedia)
-console.log(condition,longStr)
-
-let taille = (window.matchMedia("(min-width: 700px)").matches) || condition ? document.getElementById("quote").innerHTML = data[randomNum] : 0  
-// let taille = (window.matchMedia("(min-width: 700px)").matches) || condition ? Math.floor(Math.random() * data.length) ? document.getElementById("quote").innerHTML = data[randomNum] : Math.floor(Math.random() * data.length) 
-
-console.log(taille) 
-
-
-// var func2 = function(affichage) {
-//     let quote = affichage
-//     return (window.matchMedia("(min-width: 700px)").matches) || condition ? document.getElementById("quote").innerHTML = data[randomNum]
-//          : condition  ? Math.floor(Math.random() * data.length)
-         
-//   }
-
-// document.getElementById("quote").innerHTML = data[randomNum]  
-    //  document.getElementById("quote").innerHTML = data[randomNum];
-   
-    /* La largeur minimum de l'affichage est 600 px inclus */
-//   } else {
-//     /* L'affichage est inférieur à 600px de large */
-//   }{
-//     document.getElementById("quote").innerHTML = data[randomNum];
-//    }
-//    else{
-//       let citationmob = document.querySelector(".citation");
-//       citationmob.remove
-//       // documentElement.querySelector("citation").innerHTML = data[randomNum];
-
+    document.getElementById("quote").innerHTML = data[randomNum];
 
    return data[randomNum];
    
