@@ -44,7 +44,10 @@ body {
     margin-left: 3px
 }
 
-
+.fa-cloud{
+    color: $lie;
+    // color: black;  Peut etre à privilégier pour la visibilité avec background du footer en vert 
+}
 
 //CALENDAR
 .calendar{
@@ -568,13 +571,17 @@ footer {
     align-items: center;
     font-family: Arial, Verdana, sans-serif;
     height: 2rem;
-}
-footer > p >a {
+      }
+
+footer > p > a {
     // color: #9B0401;
     color: black;
     font-weight: 600;
     text-decoration: underline;
 }
+
+
+
 
 *,
 *:before,

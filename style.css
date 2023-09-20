@@ -143,6 +143,10 @@ body {
   margin-left: 3px;
 }
 
+.fa-cloud {
+  color: #e26a8d;
+}
+
 .calendar {
   grid-area: calendar;
   display: flex;
@@ -399,7 +403,6 @@ header {
   }
 }
 
- /* modification du height à 50px en mobile, suppression du width à 100%*/
 .mini_logo {
   height: 50px;
 }
